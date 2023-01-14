@@ -24,17 +24,21 @@ def load_languages_data():
     FAKE_PREDECESSORS = ["none (unique language)", "—", "Predecessor(s)"]
     FAKE_NAMES = ["Name"]
 
-    languages = list()
+    decades = list()
     tables = pd.read_html(DATA_URL)
 
     for table_idx in range(INTERESTING_TABLES_START, INTERESTING_TABLES_END + 1):
         table = tables[table_idx].fillna("")
+        decade = dict()
+        decade["idx"] = table_idx
+        decade["label"] = f"Decade {table_idx}"
+        decade["languages"] = list()
         for _, language in table.iterrows():
             if language["Predecessor(s)"]:
                 predecessors = str(language["Predecessor(s)"]).split(",")
                 for predecessor in predecessors:
                     if predecessor not in FAKE_PREDECESSORS:
-                        languages.append(
+                        decade["languages"].append(
                             {
                                 "predecessor": clean_string(predecessor),
                                 "name": clean_string(language["Name"]),
@@ -42,20 +46,20 @@ def load_languages_data():
                         )
                     else:
                         if language["Name"] not in FAKE_NAMES:
-                            languages.append(
+                            decade["languages"].append(
                                 {
                                     "name": clean_string(language["Name"]),
                                 }
                             )
             else:
                 if language["Name"] not in FAKE_NAMES:
-                    languages.append(
+                    decade["languages"].append(
                         {
                             "name": clean_string(language["Name"]),
                         }
                     )
-
-    return languages
+        decades.append(decade)
+    return decades
 
 
 def load_languages_template():
@@ -68,8 +72,8 @@ def load_languages_template():
 if __name__ == "__main__":
 
     template = load_languages_template()
-    languages = load_languages_data()
-    rendered_template = template.render(languages=languages)
+    decades = load_languages_data()
+    rendered_template = template.render(decades=decades)
 
     with open("languages.dot", "w", encoding="utf-8") as f:
         f.write(rendered_template)
