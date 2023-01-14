@@ -1,0 +1,16 @@
+digraph languages {
+
+  fontname="Helvetica,Arial,sans-serif";
+  node [fontname="Helvetica,Arial,sans-serif"];
+  edge [fontname="Helvetica,Arial,sans-serif"];
+  node [color=lightblue2, style=filled];
+  rankdir="LR";
+
+  {% for language in languages %}
+    {% if language.predecessor %}
+      "{{ language.predecessor }}" -> "{{ language.name }}"
+    {% else %}
+      "{{ language.name }}"
+    {% endif %}
+  {% endfor %}
+}
