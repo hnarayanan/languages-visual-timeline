@@ -74,8 +74,8 @@ This code is licenced under the MIT Licence. See
 [hachyderm-harish]: https://hachyderm.io/@harish
 [wikipedia-language-timeline]: https://en.wikipedia.org/wiki/Timeline_of_programming_languages
 [wikipedia-language-timeline-talk]: https://en.wikipedia.org/wiki/Talk:Timeline_of_programming_languages
-[languages-pdf-download]: https://github.com/hnarayanan/languages-visual-timeline/blob/main/output/languages.pdf
-[languages-svg-download]: https://github.com/hnarayanan/languages-visual-timeline/blob/main/output/languages.svg
+[languages-pdf-download]: https://github.com/hnarayanan/languages-visual-timeline/raw/main/output/languages.pdf
+[languages-svg-download]: https://github.com/hnarayanan/languages-visual-timeline/raw/main/output/languages.svg
 [languages-github-issues]: https://github.com/hnarayanan/languages-visual-timeline/issues
 [languages-github-license]: https://github.com/hnarayanan/languages-visual-timeline/blob/main/LICENSE
 [graphviz-dot]: https://graphviz.org/doc/info/lang.html
