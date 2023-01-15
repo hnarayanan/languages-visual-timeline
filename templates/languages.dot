@@ -2,15 +2,16 @@ digraph languages {
 
   fontname="Helvetica,Arial,sans-serif";
   node[fontname="Helvetica,Arial,sans-serif"];
-  edge[fontname="Helvetica,Arial,sans-serif"];
-  node[color="lightblue2",shape="box",style="filled,rounded"];
+  edge[fontname="Helvetica,Arial,sans-serif",color="#967E76"];
+  node[color="#E8DFCA",shape="box",style="filled,rounded"];
   newrank=true;
   rankdir=LR;
   ranksep=10;
 
-
   {% for decade in decades %}
     subgraph cluster{{ decade.idx }} {
+      peripheries=0;
+      bgcolor="#F5EFE6";
       label="{{ decade.label }}";
       rank=same;
       {% for language in decade.languages %}
