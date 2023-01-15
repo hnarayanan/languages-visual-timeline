@@ -36,6 +36,9 @@ def clean_string(string):
         ("CLIPPER", "Clipper"),
         (" (strictly its Wolfram Language)", " (Wolfram Language)"),
         ("Javascript", "JavaScript"),
+        ]
+    EXACT_REPLACEMENTS = [
+        ("Smalltalk", "Smalltalk-76"),
     ]
 
     string = string.strip()
@@ -43,6 +46,9 @@ def clean_string(string):
         string = string.replace(suffix, "")
     for pattern in REPLACED_PATTERNS:
         string = string.replace(pattern[0], pattern[1])
+    for replacement in EXACT_REPLACEMENTS:
+        if string == replacement[0]:
+            string = replacement[1]
     return string
 
 
@@ -52,6 +58,17 @@ def load_languages_data():
     INTERESTING_TABLES_END = 12
     FAKE_PREDECESSORS = ["none (unique language)", "—", "Predecessor(s)"]
     FAKE_NAMES = ["Name"]
+    DECADE_LABELS = {
+        4: "Pre-1950",
+        5: "1950s",
+        6: "1960s",
+        7: "1970s",
+        8: "1980s",
+        9: "1990s",
+        10: "2000s",
+        11: "2010s",
+        12: "2020s",
+    }
 
     decades = list()
     tables = pd.read_html(DATA_URL)
@@ -60,7 +77,7 @@ def load_languages_data():
         table = tables[table_idx].fillna("")
         decade = dict()
         decade["idx"] = table_idx
-        decade["label"] = f"Decade {table_idx}"
+        decade["label"] = DECADE_LABELS[table_idx]
         decade["languages"] = set()
         decade["languages_predecessors"] = list()
 
