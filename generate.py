@@ -13,6 +13,8 @@ def clean_string(string):
         " (year of conceptualization)",
         " (Notation)",
         " (Concept)",
+        "[1]",
+        "[2]",
         "[3][4]",
         "[5]",
         "[6]",
@@ -20,6 +22,10 @@ def clean_string(string):
         "[8]",
         "[9]",
         "[10]",
+        "[11]",
+        " (ANSI/MIL-STD-1815A)",
+        " (MIL-STD-1815)",
+        " (UNESCO/IFIP standard)",
     ]
     REPLACED_PATTERNS = [
         ("LISP", "Lisp"),
@@ -29,6 +35,7 @@ def clean_string(string):
         ("Algol60", "ALGOL 60"),
         ("CLIPPER", "Clipper"),
         (" (strictly its Wolfram Language)", " (Wolfram Language)"),
+        ("Javascript", "JavaScript"),
     ]
 
     string = string.strip()
