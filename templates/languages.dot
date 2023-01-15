@@ -6,7 +6,7 @@ digraph languages {
   node[color=lightblue2, style=filled];
   newrank=true;
   rankdir=LR;
-  ranksep=2;
+  ranksep=10;
 
 
   {% for decade in decades %}
