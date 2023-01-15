@@ -10,10 +10,11 @@ from jinja2 import Environment, FileSystemLoader
 
 
 def clean_string(string):
-    IMPLEMENTATION_SUFFIX = " (implementation)"
+    IGNORED_SUFFIXES = [" (concept)", " (implementation)"]
 
     string = string.strip()
-    string = string.replace(IMPLEMENTATION_SUFFIX, "")
+    for suffix in IGNORED_SUFFIXES:
+        string = string.replace(suffix, "")
     return string
 
 
