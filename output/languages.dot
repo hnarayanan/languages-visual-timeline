@@ -1,2722 +1,3293 @@
 digraph languages {
 
   fontname="Helvetica,Arial,sans-serif";
-  node [fontname="Helvetica,Arial,sans-serif"];
-  edge [fontname="Helvetica,Arial,sans-serif"];
-  node [color=lightblue2, style=filled];
-  rankdir="LR";
+  node[fontname="Helvetica,Arial,sans-serif"];
+  edge[fontname="Helvetica,Arial,sans-serif",color="#967E76"];
+  node[color="#E8DFCA",shape="box",style="filled,rounded"];
+  newrank=true;
+  rankdir=LR;
+  ranksep=10;
+
+  
+    subgraph cluster4 {
+      peripheries=0;
+      bgcolor="#F5EFE6";
+      label="Pre-1950";
+      rank=same;
+      
+        "ARC/Birkbeck Assembler";
+      
+        "Begriffsschrift";
+      
+        "EDSAC Initial Orders";
+      
+        "ENIAC coding system";
+      
+        "Jacquard machine";
+      
+        "Plankalkül";
+      
+        "Short Code";
+      
+    }
+  
+    subgraph cluster5 {
+      peripheries=0;
+      bgcolor="#F5EFE6";
+      label="1950s";
+      rank=same;
+      
+        "A-0";
+      
+        "ALGAE";
+      
+        "ALGOL 58 (IAL)";
+      
+        "APT";
+      
+        "ARITH-MATIC";
+      
+        "Address programming language (with Pointers)";
+      
+        "BACAIC";
+      
+        "Boehm unnamed coding system";
+      
+        "COBOL";
+      
+        "COMIT";
+      
+        "COMPOOL";
+      
+        "COMTRAN";
+      
+        "Editing Generator";
+      
+        "FACT";
+      
+        "FLOW-MATIC";
+      
+        "FORTRAN";
+      
+        "FORTRAN I";
+      
+        "FORTRAN II";
+      
+        "Freiburger Code";
+      
+        "GEORGE";
+      
+        "Glennie Autocode";
+      
+        "IPL I";
+      
+        "IPL II";
+      
+        "IPL V";
+      
+        "IT";
+      
+        "Intermediate Programming Language";
+      
+        "JOVIAL";
+      
+        "Klammerausdrücke";
+      
+        "Laning and Zierler system";
+      
+        "Lisp";
+      
+        "MAD – Michigan Algorithm Decoder";
+      
+        "MATH-MATIC";
+      
+        "MATRIX MATH";
+      
+        "Mark I Autocode";
+      
+        "Operator programming";
+      
+        "PACT I";
+      
+        "PRINT";
+      
+        "READ/PRINT";
+      
+        "Sequentielle Formelübersetzung";
+      
+        "Short Code";
+      
+        "Sort Merge Generator";
+      
+        "Speedcoding";
+      
+        "Stanislaus";
+      
+        "Superplan";
+      
+        "TRAC";
+      
+        "UNICODE";
+      
+    }
+  
+    subgraph cluster6 {
+      peripheries=0;
+      bgcolor="#F5EFE6";
+      label="1960s";
+      rank=same;
+      
+        "ALGOL 60";
+      
+        "ALGOL 68";
+      
+        "ALGOL W";
+      
+        "APL";
+      
+        "Atlas Autocode";
+      
+        "B";
+      
+        "BASIC";
+      
+        "BCPL";
+      
+        "COBOL 61";
+      
+        "COMIT";
+      
+        "CORAL66";
+      
+        "COWSEL";
+      
+        "CPL";
+      
+        "DIBOL-8";
+      
+        "EXAPT";
+      
+        "Edinburgh IMP";
+      
+        "FORTRAN 66";
+      
+        "FORTRAN IV";
+      
+        "Forth";
+      
+        "GPSS";
+      
+        "IBM RPG";
+      
+        "IITRAN";
+      
+        "ISWIM";
+      
+        "InterLisp";
+      
+        "JOSS I";
+      
+        "JOSS II";
+      
+        "Logo";
+      
+        "MAD/I";
+      
+        "MAPPER";
+      
+        "MIMIC";
+      
+        "MUMPS";
+      
+        "Mark-IV";
+      
+        "PILOT";
+      
+        "PL/I";
+      
+        "POP-1";
+      
+        "Polymorphic Programming Language (PPL)";
+      
+        "P′′";
+      
+        "REFAL";
+      
+        "RPG II";
+      
+        "SETL";
+      
+        "SNOBOL";
+      
+        "SNOBOL3";
+      
+        "SNOBOL4";
+      
+        "Simula";
+      
+        "Simula 67";
+      
+        "Speakeasy-2";
+      
+        "TELCOMP";
+      
+        "TRAC";
+      
+        "TTM";
+      
+        "TUTOR";
+      
+        "XPL";
+      
+    }
+  
+    subgraph cluster7 {
+      peripheries=0;
+      bgcolor="#F5EFE6";
+      label="1970s";
+      rank=same;
+      
+        "ABC";
+      
+        "AWK";
+      
+        "Altair BASIC";
+      
+        "Applesoft BASIC";
+      
+        "Applesoft II BASIC";
+      
+        "BASIC FOUR";
+      
+        "BLISS";
+      
+        "Bourne Shell (sh)";
+      
+        "C";
+      
+        "C shell";
+      
+        "CLU";
+      
+        "COMAL";
+      
+        "CS-4";
+      
+        "Commodore BASIC";
+      
+        "Compiler Description Language (CDL)";
+      
+        "Euclid";
+      
+        "FP";
+      
+        "Forth";
+      
+        "GRASS";
+      
+        "HAL/S";
+      
+        "IDL";
+      
+        "INTERCAL";
+      
+        "Icon";
+      
+        "Integer BASIC";
+      
+        "Irvine Dataflow";
+      
+        "KRL";
+      
+        "LIS";
+      
+        "MATLAB";
+      
+        "ML";
+      
+        "Mesa";
+      
+        "Modula";
+      
+        "Modula-2";
+      
+        "PL/M";
+      
+        "POP-2";
+      
+        "PROSE modeling language";
+      
+        "PROSE modeling language Time-Sharing Version";
+      
+        "Pascal";
+      
+        "Plus";
+      
+        "Prolog";
+      
+        "RAPT";
+      
+        "REXX";
+      
+        "RPG III";
+      
+        "Ratfor";
+      
+        "S";
+      
+        "SAIL";
+      
+        "SAS";
+      
+        "SMALL";
+      
+        "Scheme";
+      
+        "Smalltalk-72";
+      
+        "Smalltalk-76";
+      
+        "Speakeasy-3";
+      
+        "Standard MUMPS";
+      
+        "Structured Query language (SQL)";
+      
+        "TI BASIC (TI 99/4A)";
+      
+        "VisiCalc";
+      
+        "Vulcan dBase-II";
+      
+    }
+  
+    subgraph cluster8 {
+      peripheries=0;
+      bgcolor="#F5EFE6";
+      label="1980s";
+      rank=same;
+      
+        "A+";
+      
+        "ABAP";
+      
+        "Actor";
+      
+        "Ada 80";
+      
+        "Ada 83";
+      
+        "Ada ISO 8652:1987";
+      
+        "Apple III Microsoft BASIC";
+      
+        "Applesoft III";
+      
+        "BBC BASIC";
+      
+        "Bash";
+      
+        "C with classes";
+      
+        "C++";
+      
+        "C90";
+      
+        "CBASIC";
+      
+        "Clarion";
+      
+        "Clascal";
+      
+        "Clean";
+      
+        "Clipper";
+      
+        "Common Lisp";
+      
+        "Coq";
+      
+        "CorVision";
+      
+        "Draco";
+      
+        "Eiffel";
+      
+        "Erlang";
+      
+        "GFA BASIC";
+      
+        "GW-BASIC";
+      
+        "Hamilton C shell";
+      
+        "HyperTalk";
+      
+        "IBM BASICA";
+      
+        "Informix-4GL";
+      
+        "KornShell (ksh)";
+      
+        "LPC";
+      
+        "LabVIEW";
+      
+        "Magik";
+      
+        "Mathematica (Wolfram Language)";
+      
+        "Miranda";
+      
+        "Modula-3";
+      
+        "OPL";
+      
+        "Oberon";
+      
+        "Object Pascal";
+      
+        "Object REXX";
+      
+        "Objective-C";
+      
+        "Octave";
+      
+        "PARADOX";
+      
+        "PROMAL";
+      
+        "Perl";
+      
+        "PostScript";
+      
+        "PowerBASIC";
+      
+        "QuickBASIC";
+      
+        "RPL";
+      
+        "Redcode";
+      
+        "SPARK";
+      
+        "STOS BASIC";
+      
+        "Self";
+      
+        "Smalltalk-80";
+      
+        "Speakeasy-IV";
+      
+        "Standard ML";
+      
+        "TI Extended BASIC";
+      
+        "Tcl";
+      
+        "True BASIC";
+      
+        "Turbo Basic";
+      
+        "Turbo Pascal";
+      
+        "Turbo Pascal OOP";
+      
+        "Turing";
+      
+        "VisSim";
+      
+        "occam";
+      
+        "occam 2";
+      
+    }
+  
+    subgraph cluster9 {
+      peripheries=0;
+      bgcolor="#F5EFE6";
+      label="1990s";
+      rank=same;
+      
+        "AMOS BASIC";
+      
+        "AMPL";
+      
+        "ANS Forth";
+      
+        "ANSI Common Lisp";
+      
+        "ActionScript";
+      
+        "Ada 95";
+      
+        "Amiga E";
+      
+        "AppleScript";
+      
+        "Borland Delphi";
+      
+        "Borland Pascal";
+      
+        "Brainfuck";
+      
+        "C99";
+      
+        "CSS";
+      
+        "Claire";
+      
+        "ColdFusion (CFML)";
+      
+        "Component Pascal";
+      
+        "Curl";
+      
+        "Dylan";
+      
+        "E";
+      
+        "ECMAScript";
+      
+        "EuLisp";
+      
+        "Euphoria";
+      
+        "F-Script";
+      
+        "GNU E";
+      
+        "Gambas";
+      
+        "Game Maker Language (GML)";
+      
+        "HTML";
+      
+        "Harbour";
+      
+        "Haskell";
+      
+        "ISLisp";
+      
+        "J";
+      
+        "Java";
+      
+        "JavaScript";
+      
+        "K";
+      
+        "Lasso";
+      
+        "LiveCode Transcript";
+      
+        "LiveScript";
+      
+        "Logtalk";
+      
+        "Lua";
+      
+        "M2001";
+      
+        "Mercury";
+      
+        "NetRexx";
+      
+        "NewtonScript";
+      
+        "OCaml";
+      
+        "Oberon-2";
+      
+        "Object Oberon";
+      
+        "Oz";
+      
+        "PHP";
+      
+        "Perl Data Language (PDL)";
+      
+        "Pico";
+      
+        "Pike";
+      
+        "PureBasic";
+      
+        "Python";
+      
+        "Q";
+      
+        "R";
+      
+        "RAPID";
+      
+        "REBOL";
+      
+        "Racket";
+      
+        "Ruby";
+      
+        "S-Lang";
+      
+        "SKILL";
+      
+        "Sather";
+      
+        "Self";
+      
+        "Squeak";
+      
+        "Standard C++";
+      
+        "Tea";
+      
+        "UnrealScript";
+      
+        "VBScript";
+      
+        "Visual Basic";
+      
+        "XSLT (+ XPath)";
+      
+        "Xojo (REALbasic at the time)";
+      
+        "Z Shell (zsh)";
+      
+        "ZPL";
+      
+    }
+  
+    subgraph cluster10 {
+      peripheries=0;
+      bgcolor="#F5EFE6";
+      label="2000s";
+      rank=same;
+      
+        "Ada 2005";
+      
+        "Agda";
+      
+        "Alma-0";
+      
+        "AspectJ";
+      
+        "Boo";
+      
+        "C#";
+      
+        "C++03";
+      
+        "Chapel";
+      
+        "Clojure";
+      
+        "Cobra";
+      
+        "CoffeeScript";
+      
+        "D";
+      
+        "Dafny";
+      
+        "DarkBasic";
+      
+        "F#";
+      
+        "Factor";
+      
+        "Fantom";
+      
+        "Fortress";
+      
+        "FreeBASIC";
+      
+        "GDScript (GDS)";
+      
+        "Genie";
+      
+        "Go";
+      
+        "Gosu";
+      
+        "Groovy";
+      
+        "Haxe";
+      
+        "Idris";
+      
+        "Io";
+      
+        "Join Java";
+      
+        "Joy";
+      
+        "LOLCODE";
+      
+        "Little b";
+      
+        "Nemerle";
+      
+        "Nim";
+      
+        "Oberon-07";
+      
+        "OptimJ";
+      
+        "Oxygene";
+      
+        "PWCT";
+      
+        "Parasail";
+      
+        "Processing";
+      
+        "Pure";
+      
+        "QB64";
+      
+        "Scala";
+      
+        "Scratch";
+      
+        "Seed7";
+      
+        "Shakespeare Programming Language";
+      
+        "Squirrel";
+      
+        "Subtext";
+      
+        "Swift (parallel scripting language)";
+      
+        "Vala";
+      
+        "Visual Basic .NET";
+      
+        "Whiley";
+      
+        "Windows PowerShell";
+      
+    }
+  
+    subgraph cluster11 {
+      peripheries=0;
+      bgcolor="#F5EFE6";
+      label="2010s";
+      rank=same;
+      
+        "Ada 2012";
+      
+        "Ballerina";
+      
+        "Bosque";
+      
+        "C++11";
+      
+        "C++14";
+      
+        "C++17";
+      
+        "C11";
+      
+        "C17";
+      
+        "Ceylon";
+      
+        "Crystal";
+      
+        "Cuneiform";
+      
+        "Dart";
+      
+        "Elixir";
+      
+        "Elm";
+      
+        "Fortran 2018";
+      
+        "Hack";
+      
+        "Hopscotch";
+      
+        "Julia";
+      
+        "Kotlin";
+      
+        "Lean";
+      
+        "Opa";
+      
+        "P";
+      
+        "P4";
+      
+        "PureScript";
+      
+        "Q#";
+      
+        "Raku";
+      
+        "Reason";
+      
+        "Red";
+      
+        "Ring";
+      
+        "Rust";
+      
+        "Swift";
+      
+        "TypeScript";
+      
+        "Zig";
+      
+    }
+  
+    subgraph cluster12 {
+      peripheries=0;
+      bgcolor="#F5EFE6";
+      label="2020s";
+      rank=same;
+      
+        "C++20";
+      
+        "Carbon";
+      
+        "Microsoft Power Fx";
+      
+    }
+  
 
   
     
-      "Jacquard machine"
+      
+        "ENIAC Short Code" -> "ARC/Birkbeck Assembler";
+      
     
-  
+      
+        "ENIAC coding system" -> "EDSAC Initial Orders";
+      
     
-      "Begriffsschrift"
+      
+        "ENIAC Short Code" -> "Short Code";
+      
     
   
     
-      "Plankalkül (year of conceptualization)"
+      
+        "Brief Code" -> "Short Code";
+      
     
-  
+      
+        "Plankalkül" -> "Superplan";
+      
     
-      "ENIAC coding system"
+      
+        "Short Code" -> "Intermediate Programming Language";
+      
     
-  
+      
+        "CPC Coding scheme" -> "Boehm unnamed coding system";
+      
     
-      "ENIAC Short Code[1]" -> "ARC/Birkbeck Assembler"
+      
+        "Plankalkül" -> "Klammerausdrücke";
+      
     
-  
+      
+        "Short Code" -> "A-0";
+      
     
-      "Plankalkül (year of concept publication)"
+      
+        "CPC Coding scheme" -> "Glennie Autocode";
+      
     
-  
+      
+        "MESM" -> "Operator programming";
+      
     
-      "ENIAC coding system" -> "EDSAC Initial Orders"
+      
+        "SORT/MERGE" -> "Editing Generator";
+      
     
-  
+      
+        "Glennie Autocode" -> "Mark I Autocode";
+      
     
-      "ENIAC Short Code" -> "Short Code"
+      
+        "Speedcoding" -> "FORTRAN";
+      
     
-  
+      
+        "A-0" -> "ARITH-MATIC";
+      
     
-      "Brief Code" -> "Short Code"
+      
+        "A-0" -> "MATH-MATIC";
+      
     
-  
+      
+        "Operator programming - Alexey Andreevich Lyapunov & Kateryna Yushchenko & MESM" -> "Address programming language (with Pointers)";
+      
     
-      "Plankalkül" -> "Superplan"
+      
+        "A-0" -> "FLOW-MATIC";
+      
     
-  
+      
+        "FORTRAN" -> "PACT I";
+      
     
-      "ALGAE"
+      
+        "A-2" -> "PACT I";
+      
     
-  
+      
+        "Boehm" -> "Sequentielle Formelübersetzung";
+      
     
-      "Short Code" -> "Intermediate Programming Language"
+      
+        "Laning and Zierler" -> "IT";
+      
     
-  
+      
+        "IPL I" -> "IPL II";
+      
     
-      "CPC Coding scheme" -> "Boehm unnamed coding system"
+      
+        "IPL" -> "Lisp";
+      
     
-  
+      
+        "FLOW-MATIC" -> "COMTRAN";
+      
     
-      "Plankalkül" -> "Klammerausdrücke"
+      
+        "FORTRAN" -> "FORTRAN I";
+      
     
-  
+      
+        "MATH-MATIC" -> "UNICODE";
+      
     
-      "Stanislaus (Notation)"
+      
+        "FORTRAN I" -> "FORTRAN II";
+      
     
-  
+      
+        "FORTRAN" -> "ALGOL 58 (IAL)";
+      
     
-      "Sort Merge Generator"
+      
+        "IT" -> "ALGOL 58 (IAL)";
+      
     
-  
+      
+        "Sequentielle Formelübersetzung" -> "ALGOL 58 (IAL)";
+      
     
-      "Short Code" -> "A-0"
+      
+        "IPL II" -> "IPL V";
+      
     
-  
+      
+        "FLOW-MATIC" -> "COBOL";
+      
     
-      "CPC Coding scheme" -> "Glennie Autocode"
+      
+        "COMTRAN" -> "COBOL";
+      
     
-  
+      
+        "FACT" -> "COBOL";
+      
     
-      "MESM" -> "Operator programming"
+      
+        "ALGOL 58" -> "JOVIAL";
+      
     
-  
+      
+        "IPL" -> "Lisp";
+      
     
-      "SORT/MERGE" -> "Editing Generator"
+      
+        "ALGOL 58" -> "MAD – Michigan Algorithm Decoder";
+      
     
   
     
-      "COMPOOL"
+      
+        "ALGOL 58" -> "ALGOL 60";
+      
     
-  
+      
+        "FLOW-MATIC" -> "COBOL 61";
+      
     
-      "Speedcoding"
+      
+        "COMTRAN" -> "COBOL 61";
+      
     
-  
+      
+        "FORTRAN II" -> "FORTRAN IV";
+      
     
-      "READ/PRINT"
+      
+        "ALGOL 60" -> "Simula";
+      
     
-  
+      
+        "FORTRAN II" -> "SNOBOL";
+      
     
-      "Laning and Zierler system"
+      
+        "COMIT" -> "SNOBOL";
+      
     
-  
+      
+        "ALGOL 60" -> "CPL";
+      
     
-      "Glennie Autocode" -> "Mark I Autocode"
+      
+        "SNOBOL" -> "SNOBOL3";
+      
     
-  
+      
+        "ALGOL 60" -> "ALGOL 68";
+      
     
-      "Speedcoding" -> "FORTRAN"
+      
+        "ALGOL 58" -> "JOSS I";
+      
     
-  
+      
+        "MIDAS" -> "MIMIC";
+      
     
-      "A-0" -> "ARITH-MATIC"
+      
+        "CPL" -> "COWSEL";
+      
     
-  
+      
+        "Lisp" -> "COWSEL";
+      
     
-      "A-0" -> "MATH-MATIC"
+      
+        "ALGOL 60" -> "PL/I";
+      
     
-  
+      
+        "COBOL" -> "PL/I";
+      
     
-      "MATRIX MATH"
+      
+        "FORTRAN" -> "PL/I";
+      
     
-  
+      
+        "FORTRAN II" -> "BASIC";
+      
     
-      "IPL I"
+      
+        "JOSS" -> "BASIC";
+      
     
-  
+      
+        "FARGO" -> "IBM RPG";
+      
     
-      "Operator programming - Alexey Andreevich Lyapunov & Kateryna Yushchenko & MESM" -> "Address programming language (with Pointers)"
+      
+        "Speakeasy" -> "Speakeasy-2";
+      
     
-  
+      
+        "FARGO" -> "RPG II";
+      
     
-      "A-0" -> "FLOW-MATIC"
+      
+        "RPG" -> "RPG II";
+      
     
-  
+      
+        "MAD" -> "MAD/I";
+      
     
-      "BACAIC"
+      
+        "ALGOL 60" -> "MAD/I";
+      
     
-  
+      
+        "PL/I" -> "MAD/I";
+      
     
-      "FORTRAN" -> "PACT I"
+      
+        "JOSS" -> "TELCOMP";
+      
     
-  
+      
+        "ALGOL 60" -> "Atlas Autocode";
+      
     
-      "A-2" -> "PACT I"
+      
+        "Autocode" -> "Atlas Autocode";
+      
     
-  
+      
+        "JOSS I" -> "JOSS II";
+      
     
-      "Freiburger Code[3][4]"
+      
+        "ALGOL 60" -> "ALGOL W";
+      
     
-  
+      
+        "FORTRAN IV" -> "FORTRAN 66";
+      
     
-      "Boehm" -> "Sequentielle Formelübersetzung"
+      
+        "Lisp" -> "ISWIM";
+      
     
-  
+      
+        "ALGOL 60" -> "CORAL66";
+      
     
-      "Laning and Zierler" -> "IT"
+      
+        "CPL" -> "BCPL";
+      
     
-  
+      
+        "FORTRAN" -> "MUMPS";
+      
     
-      "PRINT"
+      
+        "TELCOMP" -> "MUMPS";
+      
     
-  
+      
+        "ALGOL 60" -> "Simula 67";
+      
     
-      "IPL I" -> "IPL II"
+      
+        "Lisp" -> "InterLisp";
+      
     
-  
+      
+        "APT" -> "EXAPT";
+      
     
-      "IPL" -> "LISP"
+      
+        "SNOBOL3" -> "SNOBOL4";
+      
     
-  
+      
+        "PL/I" -> "XPL";
+      
     
-      "FLOW-MATIC" -> "COMTRAN"
+      
+        "ALGOL 60" -> "ALGOL 68";
+      
     
-  
+      
+        "COWSEL" -> "POP-1";
+      
     
-      "GEORGE"
+      
+        "DIBOL" -> "DIBOL-8";
+      
     
-  
+      
+        "Lisp" -> "Logo";
+      
     
-      "FORTRAN" -> "FORTRAN I"
+      
+        "CRT RPS" -> "MAPPER";
+      
     
-  
+      
+        "GAP" -> "TTM";
+      
     
-      "MATH-MATIC" -> "UNICODE"
+      
+        "GPM" -> "TTM";
+      
     
-  
+      
+        "Computest" -> "PILOT";
+      
     
-      "COMIT"
+      
+        "ALGOL 60" -> "PL/I";
+      
     
-  
+      
+        "COBOL" -> "PL/I";
+      
     
-      "FORTRAN I" -> "FORTRAN II"
+      
+        "FORTRAN" -> "PL/I";
+      
     
-  
+      
+        "BCPL" -> "B";
+      
     
-      "FORTRAN" -> "ALGOL 58 (IAL)"
+      
+        "ALGOL 60" -> "SETL";
+      
     
-  
+      
+        "ALGOL 60" -> "Edinburgh IMP";
+      
     
-      "IT" -> "ALGOL 58 (IAL)"
+      
+        "Autocode" -> "Edinburgh IMP";
+      
     
+      
+        "Atlas Autocode" -> "Edinburgh IMP";
+      
+    
   
     
-      "Sequentielle Formelübersetzung" -> "ALGOL 58 (IAL)"
+      
+        "POP-1" -> "POP-2";
+      
     
-  
+      
+        "ALGOL 60" -> "SAIL";
+      
     
-      "IPL II" -> "IPL V"
+      
+        "ALGOL 60" -> "Pascal";
+      
     
-  
+      
+        "ALGOL W" -> "Pascal";
+      
     
-      "APT"
+      
+        "ALGOL" -> "BLISS";
+      
     
-  
+      
+        "KM" -> "KRL";
+      
     
-      "FACT"
+      
+        "FRL (MIT)" -> "KRL";
+      
     
-  
+      
+        "Simula 67" -> "Smalltalk-72";
+      
     
-      "FLOW-MATIC" -> "COBOL"
+      
+        "PL/I" -> "PL/M";
+      
     
-  
+      
+        "ALGOL" -> "PL/M";
+      
     
-      "COMTRAN" -> "COBOL"
+      
+        "XPL" -> "PL/M";
+      
     
-  
+      
+        "B" -> "C";
+      
     
-      "FACT" -> "COBOL"
+      
+        "BCPL" -> "C";
+      
     
-  
+      
+        "ALGOL 68" -> "C";
+      
     
-      "ALGOL 58" -> "JOVIAL"
+      
+        "2-level W-Grammar" -> "Prolog";
+      
     
-  
+      
+        "ALPHA" -> "Structured Query language (SQL)";
+      
     
-      "IPL" -> "LISP"
+      
+        "Quel (Ingres)" -> "Structured Query language (SQL)";
+      
     
-  
+      
+        "Pascal" -> "COMAL";
+      
     
-      "ALGOL 58" -> "MAD – Michigan Algorithm Decoder"
+      
+        "BASIC" -> "COMAL";
+      
     
-  
+      
+        "Pascal" -> "LIS";
+      
     
-      "TRAC"
+      
+        "Sue" -> "LIS";
+      
     
-  
+      
+        "Speakeasy-2" -> "Speakeasy-3";
+      
     
-      "ALGOL 58" -> "ALGOL 60"
+      
+        "ALGOL 60" -> "CLU";
+      
     
-  
+      
+        "Lisp" -> "CLU";
+      
     
-      "FLOW-MATIC" -> "COBOL 61"
+      
+        "Simula" -> "CLU";
+      
     
-  
+      
+        "BASIC" -> "GRASS";
+      
     
-      "COMTRAN" -> "COBOL 61"
+      
+        "Business BASIC" -> "BASIC FOUR";
+      
     
-  
+      
+        "SLANG" -> "PROSE modeling language";
+      
     
-      "COMIT"
+      
+        "FORTRAN" -> "PROSE modeling language";
+      
     
-  
+      
+        "SETL" -> "ABC";
+      
     
-      "GPSS"
+      
+        "SLANG" -> "PROSE modeling language Time-Sharing Version";
+      
     
-  
+      
+        "FORTRAN" -> "PROSE modeling language Time-Sharing Version";
+      
     
-      "FORTRAN II" -> "FORTRAN IV"
+      
+        "Lisp" -> "Scheme";
+      
     
-  
+      
+        "BASIC" -> "Altair BASIC";
+      
     
-      "APL"
+      
+        "ALGOL 68" -> "CS-4";
+      
     
-  
+      
+        "BLISS" -> "CS-4";
+      
     
-      "ALGOL 60" -> "Simula"
+      
+        "ECL" -> "CS-4";
+      
     
-  
+      
+        "HAL" -> "CS-4";
+      
     
-      "FORTRAN II" -> "SNOBOL"
+      
+        "Pascal" -> "Modula";
+      
     
-  
+      
+        "Pascal" -> "Plus";
+      
     
-      "COMIT" -> "SNOBOL"
+      
+        "Sue" -> "Plus";
+      
     
-  
+      
+        "Smalltalk-72" -> "Smalltalk-76";
+      
     
-      "ALGOL 60" -> "CPL"
+      
+        "ALGOL" -> "Mesa";
+      
     
-  
+      
+        "C" -> "Ratfor";
+      
     
-      "SNOBOL" -> "SNOBOL3"
+      
+        "FORTRAN" -> "Ratfor";
+      
     
-  
+      
+        "APL" -> "S";
+      
     
-      "ALGOL 60" -> "ALGOL 68"
+      
+        "PPL" -> "S";
+      
     
-  
+      
+        "Scheme" -> "S";
+      
     
-      "ALGOL 58" -> "JOSS I"
+      
+        "BASIC" -> "Integer BASIC";
+      
     
-  
+      
+        "BASIC" -> "Commodore BASIC";
+      
     
-      "MIDAS" -> "MIMIC"
+      
+        "Fortran" -> "IDL";
+      
     
-  
+      
+        "MUMPS" -> "Standard MUMPS";
+      
     
-      "CPL" -> "COWSEL"
+      
+        "SNOBOL" -> "Icon";
+      
     
-  
+      
+        "BASIC" -> "Applesoft BASIC";
+      
     
-      "LISP" -> "COWSEL"
+      
+        "APT" -> "RAPT";
+      
     
-  
+      
+        "C" -> "C shell";
+      
     
-      "ALGOL 60" -> "PL/I"
+      
+        "FARGO" -> "RPG III";
+      
     
-  
+      
+        "RPG" -> "RPG III";
+      
     
-      "COBOL" -> "PL/I"
+      
+        "RPG II" -> "RPG III";
+      
     
-  
+      
+        "XPL" -> "HAL/S";
+      
     
-      "FORTRAN" -> "PL/I"
+      
+        "Applesoft BASIC" -> "Applesoft II BASIC";
+      
     
-  
+      
+        "Fortran" -> "MATLAB";
+      
     
-      "FORTRAN II" -> "BASIC"
+      
+        "ALGOL 60" -> "SMALL";
+      
     
-  
+      
+        "BASIC" -> "TI BASIC (TI 99/4A)";
+      
     
-      "JOSS" -> "BASIC"
+      
+        "Modula" -> "Modula-2";
+      
     
-  
+      
+        "Mesa" -> "Modula-2";
+      
     
-      "FARGO" -> "IBM RPG"
+      
+        "PL/I" -> "REXX";
+      
     
-  
+      
+        "BASIC" -> "REXX";
+      
     
-      "Mark-IV"
+      
+        "EXEC 2" -> "REXX";
+      
     
-  
+      
+        "C" -> "AWK";
+      
     
-      "Speakeasy" -> "Speakeasy-2"
+      
+        "SNOBOL" -> "AWK";
+      
     
+      
+        "SNOBOL" -> "Icon";
+      
+    
   
     
-      "TRAC"
+      
+        "ALGOL 68" -> "Ada 80";
+      
     
-  
+      
+        "Green" -> "Ada 80";
+      
     
-      "P′′"
+      
+        "C" -> "C with classes";
+      
     
-  
+      
+        "Simula 67" -> "C with classes";
+      
     
-      "IITRAN"
+      
+        "Applesoft II BASIC" -> "Applesoft III";
+      
     
-  
+      
+        "Microsoft BASIC" -> "Apple III Microsoft BASIC";
+      
     
-      "FARGO" -> "RPG II"
+      
+        "BASIC" -> "CBASIC";
+      
     
-  
+      
+        "Compiler Systems" -> "CBASIC";
+      
     
-      "RPG" -> "RPG II"
+      
+        "Digital Research" -> "CBASIC";
+      
     
-  
+      
+        "Smalltalk-76" -> "Smalltalk-80";
+      
     
-      "MAD" -> "MAD/I"
+      
+        "TI BASIC (TI 99/4A)" -> "TI Extended BASIC";
+      
     
-  
+      
+        "BASIC" -> "BBC BASIC";
+      
     
-      "ALGOL 60" -> "MAD/I"
+      
+        "BASIC" -> "IBM BASICA";
+      
     
-  
+      
+        "Speakeasy-3" -> "Speakeasy-IV";
+      
     
-      "PL/I" -> "MAD/I"
+      
+        "Pascal" -> "Draco";
+      
     
-  
+      
+        "C" -> "Draco";
+      
     
-      "JOSS" -> "TELCOMP"
+      
+        "ALGOL 68" -> "Draco";
+      
     
-  
+      
+        "InterPress" -> "PostScript";
+      
     
-      "Algol 60" -> "Atlas Autocode"
+      
+        "Euclid" -> "Turing";
+      
     
-  
+      
+        "IBM BASICA" -> "GW-BASIC";
+      
     
-      "Autocode" -> "Atlas Autocode"
+      
+        "Pascal" -> "Turbo Pascal";
+      
     
-  
+      
+        "Ada 80" -> "Ada 83";
+      
     
-      "JOSS I" -> "JOSS II"
+      
+        "Green" -> "Ada 83";
+      
     
-  
+      
+        "Smalltalk-76" -> "Objective-C";
+      
     
-      "ALGOL 60" -> "ALGOL W"
+      
+        "C" -> "Objective-C";
+      
     
-  
+      
+        "C with Classes" -> "C++";
+      
     
-      "FORTRAN IV" -> "FORTRAN 66"
+      
+        "BASIC" -> "True BASIC";
+      
     
-  
+      
+        "EPL" -> "occam";
+      
     
-      "LISP" -> "ISWIM (Concept)"
+      
+        "COBOL" -> "ABAP";
+      
     
-  
+      
+        "sh" -> "KornShell (ksh)";
+      
     
-      "ALGOL 60" -> "CORAL66"
+      
+        "Pascal" -> "Clascal";
+      
     
-  
+      
+        "dBase" -> "Clipper";
+      
     
-      "APL[5]"
+      
+        "Lisp" -> "Common Lisp";
+      
     
-  
+      
+        "Forth" -> "RPL";
+      
     
-      "CPL" -> "BCPL"
+      
+        "Lisp" -> "RPL";
+      
     
-  
+      
+        "ML" -> "Standard ML";
+      
     
-      "FORTRAN" -> "MUMPS"
+      
+        "BASIC" -> "OPL";
+      
     
-  
+      
+        "dBase" -> "PARADOX";
+      
     
-      "TELCOMP" -> "MUMPS"
+      
+        "BASIC" -> "QuickBASIC";
+      
     
-  
+      
+        "INFORM" -> "CorVision";
+      
     
-      "ALGOL 60" -> "Simula 67"
+      
+        "Simula 67" -> "Eiffel";
+      
     
-  
+      
+        "Ada" -> "Eiffel";
+      
     
-      "Lisp" -> "InterLisp"
+      
+        "BASIC" -> "GFA BASIC";
+      
     
-  
+      
+        "Pascal" -> "Object Pascal";
+      
     
-      "APT" -> "EXAPT"
+      
+        "C" -> "PROMAL";
+      
     
-  
+      
+        "Prolog" -> "Erlang";
+      
     
-      "SNOBOL3" -> "SNOBOL4"
+      
+        "Ada 83" -> "Ada ISO 8652:1987";
+      
     
-  
+      
+        "Smalltalk-76" -> "Self";
+      
     
-      "PL/I" -> "XPL"
+      
+        "occam" -> "occam 2";
+      
     
-  
+      
+        "C" -> "Perl";
+      
     
-      "ALGOL 60" -> "ALGOL 68 (UNESCO/IFIP standard)"
+      
+        "sed" -> "Perl";
+      
     
-  
+      
+        "awk" -> "Perl";
+      
     
-      "COWSEL" -> "POP-1"
+      
+        "sh" -> "Perl";
+      
     
-  
+      
+        "Modula-2" -> "Oberon";
+      
     
-      "DIBOL" -> "DIBOL-8"
+      
+        "BASIC/Z" -> "Turbo Basic";
+      
     
-  
+      
+        "MATLAB" -> "Octave";
+      
     
-      "Forth"
+      
+        "Awk" -> "Tcl";
+      
     
-  
+      
+        "Lisp" -> "Tcl";
+      
     
-      "LISP" -> "LOGO"
+      
+        "BASIC" -> "STOS BASIC";
+      
     
-  
+      
+        "Forth" -> "Actor";
+      
     
-      "CRT RPS" -> "MAPPER"
+      
+        "Smalltalk-76" -> "Actor";
+      
     
-  
+      
+        "REXX" -> "Object REXX";
+      
     
-      "REFAL"
+      
+        "Smalltalk-76" -> "Object REXX";
+      
     
-  
+      
+        "Ada" -> "SPARK";
+      
     
-      "GAP" -> "TTM"
+      
+        "APL" -> "A+";
+      
     
-  
+      
+        "A" -> "A+";
+      
     
-      "GPM" -> "TTM"
+      
+        "C shell" -> "Hamilton C shell";
+      
     
-  
+      
+        "Turbo Pascal" -> "Turbo Pascal OOP";
+      
     
-      "Computest" -> "PILOT"
+      
+        "Object Pascal" -> "Turbo Pascal OOP";
+      
     
-  
+      
+        "Modula-2" -> "Modula-3";
+      
     
-      "ALGOL 60" -> "PL/I"
+      
+        "Turbo Basic" -> "PowerBASIC";
+      
     
-  
+      
+        "Bourne shell" -> "Bash";
+      
     
-      "COBOL" -> "PL/I"
+      
+        "C shell" -> "Bash";
+      
     
-  
+      
+        "KornShell" -> "Bash";
+      
     
-      "FORTRAN" -> "PL/I"
+      
+        "Smalltalk-76" -> "Magik";
+      
     
   
     
-      "BCPL" -> "B"
+      
+        "Eiffel" -> "Sather";
+      
     
-  
+      
+        "STOS BASIC" -> "AMOS BASIC";
+      
     
-      "Polymorphic Programming Language (PPL)"
+      
+        "Oberon" -> "Object Oberon";
+      
     
-  
+      
+        "APL" -> "J";
+      
     
-      "ALGOL 60" -> "SETL"
+      
+        "FP" -> "J";
+      
     
-  
+      
+        "Miranda" -> "Haskell";
+      
     
-      "TUTOR"
+      
+        "Common Lisp" -> "EuLisp";
+      
     
-  
+      
+        "Scheme" -> "EuLisp";
+      
     
-      "Algol 60" -> "Edinburgh IMP"
+      
+        "ksh" -> "Z Shell (zsh)";
+      
     
-  
+      
+        "Franz Lisp" -> "SKILL";
+      
     
-      "Autocode" -> "Edinburgh IMP"
+      
+        "C++" -> "GNU E";
+      
     
-  
+      
+        "Object Oberon" -> "Oberon-2";
+      
     
-      "Atlas Autocode" -> "Edinburgh IMP"
+      
+        "Prolog" -> "Oz";
+      
     
-  
+      
+        "ABC" -> "Python";
+      
     
-      "Forth"
+      
+        "C" -> "Python";
+      
     
-  
+      
+        "QuickBASIC" -> "Visual Basic";
+      
     
-      "POP-1" -> "POP-2"
+      
+        "Turbo Pascal OOP" -> "Borland Pascal";
+      
     
-  
+      
+        "Common Lisp" -> "Dylan";
+      
     
-      "ALGOL-60" -> "SAIL"
+      
+        "Scheme" -> "Dylan";
+      
     
-  
+      
+        "PostScript" -> "S-Lang";
+      
     
-      "ALGOL 60" -> "Pascal"
+      
+        "Smalltalk-76" -> "Self";
+      
     
-  
+      
+        "DEX" -> "Amiga E";
+      
     
-      "ALGOL W" -> "Pascal"
+      
+        "C" -> "Amiga E";
+      
     
-  
+      
+        "Modula-2" -> "Amiga E";
+      
     
-      "ALGOL" -> "BLISS"
+      
+        "P'′" -> "Brainfuck";
+      
     
-  
+      
+        "HyperTalk" -> "LiveCode Transcript";
+      
     
-      "KM" -> "KRL"
+      
+        "HyperTalk" -> "AppleScript";
+      
     
-  
+      
+        "APL" -> "K";
+      
     
-      "FRL (MIT)" -> "KRL"
+      
+        "Lisp" -> "K";
+      
     
-  
+      
+        "Scheme" -> "Lua";
+      
     
-      "Compiler Description Language (CDL)"
+      
+        "SNOBOL" -> "Lua";
+      
     
-  
+      
+        "Modula" -> "Lua";
+      
     
-      "Simula 67" -> "Smalltalk-72"
+      
+        "CLU" -> "Lua";
+      
     
-  
+      
+        "C++" -> "Lua";
+      
     
-      "PL/I" -> "PL/M"
+      
+        "S" -> "R";
+      
     
-  
+      
+        "C" -> "ZPL";
+      
     
-      "ALGOL" -> "PL/M"
+      
+        "Self" -> "NewtonScript";
+      
     
-  
+      
+        "Dylan" -> "NewtonScript";
+      
     
-      "XPL" -> "PL/M"
+      
+        "SNOBOL" -> "Euphoria";
+      
     
-  
+      
+        "AWK" -> "Euphoria";
+      
     
-      "B" -> "C"
+      
+        "ABC" -> "Euphoria";
+      
     
-  
+      
+        "Icon" -> "Euphoria";
+      
     
-      "BCPL" -> "C"
+      
+        "Python" -> "Euphoria";
+      
     
-  
+      
+        "Smalltalk-76" -> "Claire";
+      
     
-      "ALGOL 68" -> "C"
+      
+        "SETL" -> "Claire";
+      
     
-  
+      
+        "OPS5" -> "Claire";
+      
     
-      "INTERCAL"
+      
+        "Lisp" -> "Claire";
+      
     
-  
+      
+        "ML" -> "Claire";
+      
     
-      "2-level W-Grammar" -> "Prolog"
+      
+        "C" -> "Claire";
+      
     
-  
+      
+        "LORE" -> "Claire";
+      
     
-      "ALPHA" -> "Structured Query language (SQL)"
+      
+        "LAURE" -> "Claire";
+      
     
-  
+      
+        "Common Lisp" -> "ANSI Common Lisp";
+      
     
-      "Quel (Ingres)" -> "Structured Query language (SQL)"
+      
+        "ARLA" -> "RAPID";
+      
     
-  
+      
+        "LPC" -> "Pike";
+      
     
-      "Pascal" -> "COMAL"
+      
+        "C" -> "Pike";
+      
     
-  
+      
+        "µLPC" -> "Pike";
+      
     
-      "BASIC" -> "COMAL"
+      
+        "Forth" -> "ANS Forth";
+      
     
-  
+      
+        "Ada 83" -> "Ada 95";
+      
     
-      "ML"
+      
+        "Borland Pascal" -> "Borland Delphi";
+      
     
-  
+      
+        "C" -> "Java";
+      
     
-      "Pascal" -> "LIS"
+      
+        "Simula 67" -> "Java";
+      
     
-  
+      
+        "C++" -> "Java";
+      
     
-      "Sue" -> "LIS"
+      
+        "Smalltalk-76" -> "Java";
+      
     
-  
+      
+        "Ada 83" -> "Java";
+      
     
-      "Speakeasy-2" -> "Speakeasy-3"
+      
+        "Objective-C" -> "Java";
+      
     
-  
+      
+        "Mesa" -> "Java";
+      
     
-      "ALGOL 60" -> "CLU"
+      
+        "Self" -> "LiveScript";
+      
     
-  
+      
+        "C" -> "LiveScript";
+      
     
-      "Lisp" -> "CLU"
+      
+        "Scheme" -> "LiveScript";
+      
     
-  
+      
+        "Prolog" -> "Mercury";
+      
     
-      "Simula" -> "CLU"
+      
+        "Hope" -> "Mercury";
+      
     
-  
+      
+        "Haskell" -> "Mercury";
+      
     
-      "BASIC" -> "GRASS"
+      
+        "Perl" -> "PHP";
+      
     
-  
+      
+        "Smalltalk-76" -> "Ruby";
+      
     
-      "Business BASIC" -> "BASIC FOUR"
+      
+        "Perl" -> "Ruby";
+      
     
-  
+      
+        "LiveScript" -> "JavaScript";
+      
     
-      "SLANG" -> "PROSE modeling language"
+      
+        "Scheme" -> "Racket";
+      
     
-  
+      
+        "Lisp" -> "Racket";
+      
     
-      "FORTRAN" -> "PROSE modeling language"
+      
+        "SGML" -> "CSS";
+      
     
-  
+      
+        "Lisp" -> "Curl";
+      
     
-      "SETL" -> "ABC"
+      
+        "C++" -> "Curl";
+      
     
-  
+      
+        "Tcl/Tk" -> "Curl";
+      
     
-      "Irvine Dataflow"
+      
+        "TeX" -> "Curl";
+      
     
-  
+      
+        "HTML" -> "Curl";
+      
     
-      "SLANG" -> "PROSE modeling language Time-Sharing Version"
+      
+        "APL" -> "Perl Data Language (PDL)";
+      
     
-  
+      
+        "Perl" -> "Perl Data Language (PDL)";
+      
     
-      "FORTRAN" -> "PROSE modeling language Time-Sharing Version"
+      
+        "Visual Basic" -> "VBScript";
+      
     
-  
+      
+        "Caml Light" -> "OCaml";
+      
     
-      "LISP" -> "Scheme"
+      
+        "Standard ML" -> "OCaml";
+      
     
-  
+      
+        "REXX" -> "NetRexx";
+      
     
-      "BASIC" -> "Altair BASIC"
+      
+        "Oberon-2" -> "Component Pascal";
+      
     
-  
+      
+        "Joule" -> "E";
+      
     
-      "ALGOL 68" -> "CS-4"
+      
+        "Original-E" -> "E";
+      
     
-  
+      
+        "Scheme" -> "Pico";
+      
     
-      "BLISS" -> "CS-4"
+      
+        "Smalltalk-80" -> "Squeak";
+      
     
-  
+      
+        "Self" -> "Squeak";
+      
     
-      "ECL" -> "CS-4"
+      
+        "JavaScript" -> "ECMAScript";
+      
     
-  
+      
+        "Smalltalk-76" -> "F-Script";
+      
     
-      "HAL" -> "CS-4"
+      
+        "APL" -> "F-Script";
+      
     
-  
+      
+        "Objective-C" -> "F-Script";
+      
     
-      "Pascal" -> "Modula"
+      
+        "Common Lisp" -> "ISLisp";
+      
     
-  
+      
+        "Java" -> "Tea";
+      
     
-      "Pascal" -> "Plus"
+      
+        "Scheme" -> "Tea";
+      
     
-  
+      
+        "Tcl" -> "Tea";
+      
     
-      "Sue" -> "Plus"
+      
+        "Self" -> "REBOL";
+      
     
-  
+      
+        "Forth" -> "REBOL";
+      
     
-      "Smalltalk-72" -> "Smalltalk-76"
+      
+        "Lisp" -> "REBOL";
+      
     
-  
+      
+        "Logo" -> "REBOL";
+      
     
-      "ALGOL" -> "Mesa"
+      
+        "Prolog" -> "Logtalk";
+      
     
-  
+      
+        "ECMAScript" -> "ActionScript";
+      
     
-      "C" -> "Ratfor"
+      
+        "C++" -> "Standard C++";
+      
     
-  
+      
+        "Standard C" -> "Standard C++";
+      
     
-      "FORTRAN" -> "Ratfor"
+      
+        "C" -> "Standard C++";
+      
     
-  
+      
+        "C++" -> "UnrealScript";
+      
     
-      "APL" -> "S"
+      
+        "Java" -> "UnrealScript";
+      
     
-  
+      
+        "DSSSL" -> "XSLT (+ XPath)";
+      
     
-      "PPL" -> "S"
+      
+        "Visual Basic" -> "Xojo (REALbasic at the time)";
+      
     
-  
+      
+        "C90" -> "C99";
+      
     
-      "Scheme" -> "S"
+      
+        "Visual Basic" -> "Gambas";
+      
     
-  
+      
+        "Java" -> "Gambas";
+      
     
-      "SAS"
+      
+        "Game Maker" -> "Game Maker Language (GML)";
+      
     
-  
+      
+        "dBase" -> "Harbour";
+      
     
-      "BASIC" -> "Integer BASIC"
+      
+        "Clipper" -> "Harbour";
+      
     
   
     
-      "FP"
+      
+        "Java" -> "Join Java";
+      
     
-  
+      
+        "C" -> "C#";
+      
     
-      "Bourne Shell (sh)"
+      
+        "C++" -> "C#";
+      
     
-  
+      
+        "Java" -> "C#";
+      
     
-      "BASIC" -> "Commodore BASIC"
+      
+        "Delphi" -> "C#";
+      
     
-  
+      
+        "Modula-2" -> "C#";
+      
     
-      "Fortran" -> "IDL"
+      
+        "FP" -> "Joy";
+      
     
-  
+      
+        "Forth" -> "Joy";
+      
     
-      "MUMPS" -> "Standard MUMPS"
+      
+        "Java" -> "AspectJ";
+      
     
-  
+      
+        "Common Lisp" -> "AspectJ";
+      
     
-      "SNOBOL" -> "Icon"
+      
+        "C" -> "D";
+      
     
-  
+      
+        "C++" -> "D";
+      
     
-      "Euclid"
+      
+        "C#" -> "D";
+      
     
-  
+      
+        "Java" -> "D";
+      
     
-      "BASIC" -> "Applesoft BASIC"
+      
+        "Java" -> "Processing";
+      
     
-  
+      
+        "C" -> "Processing";
+      
     
-      "APT" -> "RAPT"
+      
+        "C++" -> "Processing";
+      
     
-  
+      
+        "Visual Basic" -> "Visual Basic .NET";
+      
     
-      "C" -> "C shell"
+      
+        "Godot" -> "GDScript (GDS)";
+      
     
-  
+      
+        "Self" -> "Io";
+      
     
-      "FARGO" -> "RPG III"
+      
+        "NewtonScript" -> "Io";
+      
     
-  
+      
+        "Lua" -> "Io";
+      
     
-      "RPG" -> "RPG III"
+      
+        "GScript" -> "Gosu";
+      
     
-  
+      
+        "Logo" -> "Scratch";
+      
     
-      "RPG II" -> "RPG III"
+      
+        "Smalltalk-76" -> "Scratch";
+      
     
-  
+      
+        "Squeak" -> "Scratch";
+      
     
-      "XPL" -> "HAL/S"
+      
+        "E-Toys" -> "Scratch";
+      
     
-  
+      
+        "HyperCard" -> "Scratch";
+      
     
-      "Applesoft BASIC" -> "Applesoft II BASIC"
+      
+        "AgentSheets" -> "Scratch";
+      
     
-  
+      
+        "StarLogo" -> "Scratch";
+      
     
-      "Irvine Dataflow"
+      
+        "Tweak" -> "Scratch";
+      
     
-  
+      
+        "C#" -> "Nemerle";
+      
     
-      "Fortran" -> "MATLAB"
+      
+        "ML" -> "Nemerle";
+      
     
-  
+      
+        "MetaHaskell" -> "Nemerle";
+      
     
-      "Algol60" -> "SMALL"
+      
+        "Joy" -> "Factor";
+      
     
-  
+      
+        "Forth" -> "Factor";
+      
     
-      "VisiCalc"
+      
+        "Lisp" -> "Factor";
+      
     
-  
+      
+        "Smalltalk-76" -> "Scala";
+      
     
-      "BASIC" -> "TI BASIC (TI 99/4A)"
+      
+        "Java" -> "Scala";
+      
     
-  
+      
+        "Haskell" -> "Scala";
+      
     
-      "Modula" -> "Modula-2"
+      
+        "Standard ML" -> "Scala";
+      
     
-  
+      
+        "OCaml" -> "Scala";
+      
     
-      "Mesa" -> "Modula-2"
+      
+        "C++" -> "C++03";
+      
     
-  
+      
+        "Standard C" -> "C++03";
+      
     
-      "PL/I" -> "REXX"
+      
+        "C" -> "C++03";
+      
     
-  
+      
+        "Lua" -> "Squirrel";
+      
     
-      "BASIC" -> "REXX"
+      
+        "Python" -> "Boo";
+      
     
-  
+      
+        "C#" -> "Boo";
+      
     
-      "EXEC 2" -> "REXX"
+      
+        "QBasic" -> "FreeBASIC";
+      
     
-  
+      
+        "Java" -> "Groovy";
+      
     
-      "C" -> "AWK"
+      
+        "Lisp" -> "Little b";
+      
     
-  
+      
+        "C#" -> "Fantom";
+      
     
-      "SNOBOL" -> "AWK"
+      
+        "Scala" -> "Fantom";
+      
     
-  
+      
+        "Ruby" -> "Fantom";
+      
     
-      "SNOBOL" -> "Icon"
+      
+        "Erlang" -> "Fantom";
+      
     
-  
+      
+        "OCaml" -> "F#";
+      
     
-      "Vulcan dBase-II"
+      
+        "C#" -> "F#";
+      
     
-  
+      
+        "Haskell" -> "F#";
+      
     
-      "ALGOL 68" -> "Ada 80 (MIL-STD-1815)"
+      
+        "ActionScript" -> "Haxe";
+      
     
-  
+      
+        "OCaml" -> "Haxe";
+      
     
-      "Green" -> "Ada 80 (MIL-STD-1815)"
+      
+        "Java" -> "Haxe";
+      
     
-  
+      
+        "Object Pascal" -> "Oxygene";
+      
     
-      "C" -> "C with classes"
+      
+        "C#" -> "Oxygene";
+      
     
-  
+      
+        "Python" -> "Cobra";
+      
     
-      "Simula 67" -> "C with classes"
+      
+        "C#" -> "Cobra";
+      
     
-  
+      
+        "Eiffel" -> "Cobra";
+      
     
-      "Applesoft II BASIC" -> "Applesoft III"
+      
+        "Objective-C" -> "Cobra";
+      
     
-  
+      
+        "C#" -> "Windows PowerShell";
+      
     
-      "Microsoft BASIC" -> "Apple III Microsoft BASIC"
+      
+        "ksh" -> "Windows PowerShell";
+      
     
-  
+      
+        "Perl" -> "Windows PowerShell";
+      
     
-      "BASIC" -> "CBASIC"
+      
+        "CL" -> "Windows PowerShell";
+      
     
-  
+      
+        "DCL" -> "Windows PowerShell";
+      
     
-      "Compiler Systems" -> "CBASIC"
+      
+        "SQL" -> "Windows PowerShell";
+      
     
-  
+      
+        "Java" -> "OptimJ";
+      
     
-      "Digital Research" -> "CBASIC"
+      
+        "Scala" -> "Fortress";
+      
     
-  
+      
+        "ML" -> "Fortress";
+      
     
-      "Smalltalk-76" -> "Smalltalk-80"
+      
+        "Haskell" -> "Fortress";
+      
     
-  
+      
+        "C#" -> "Vala";
+      
     
-      "TI BASIC (TI 99/4A)" -> "TI Extended BASIC"
+      
+        "Ada 95" -> "Ada 2005";
+      
     
-  
+      
+        "Coq" -> "Agda";
+      
     
-      "BASIC" -> "BBC BASIC"
+      
+        "Epigram" -> "Agda";
+      
     
-  
+      
+        "Haskell" -> "Agda";
+      
     
-      "BASIC" -> "IBM BASICA"
+      
+        "QBasic" -> "QB64";
+      
     
-  
+      
+        "Lisp" -> "Clojure";
+      
     
-      "Speakeasy-3" -> "Speakeasy-IV"
+      
+        "ML" -> "Clojure";
+      
     
-  
+      
+        "Haskell" -> "Clojure";
+      
     
-      "Pascal" -> "Draco"
+      
+        "Erlang" -> "Clojure";
+      
     
-  
+      
+        "Oberon" -> "Oberon-07";
+      
     
-      "C" -> "Draco"
+      
+        "Python" -> "Nim";
+      
     
-  
+      
+        "Lisp" -> "Nim";
+      
     
-      "ALGOL 68" -> "Draco"
+      
+        "Object Pascal" -> "Nim";
+      
     
-  
+      
+        "Python" -> "Genie";
+      
     
-      "InterPress" -> "PostScript"
+      
+        "Boo" -> "Genie";
+      
     
-  
+      
+        "D" -> "Genie";
+      
     
-      "Euclid" -> "Turing"
+      
+        "Object Pascal" -> "Genie";
+      
     
-  
+      
+        "Q" -> "Pure";
+      
     
-      "IBM BASICA" -> "GW-BASIC"
+      
+        "HPF" -> "Chapel";
+      
     
-  
+      
+        "ZPL" -> "Chapel";
+      
     
-      "Pascal" -> "Turbo Pascal"
+      
+        "C" -> "Go";
+      
     
-  
+      
+        "Oberon" -> "Go";
+      
     
-      "Ada 80" -> "Ada 83 (ANSI/MIL-STD-1815A)"
+      
+        "Limbo" -> "Go";
+      
     
-  
+      
+        "Smalltalk-76" -> "Go";
+      
     
-      "Green" -> "Ada 83 (ANSI/MIL-STD-1815A)"
+      
+        "JavaScript" -> "CoffeeScript";
+      
     
-  
+      
+        "Ruby" -> "CoffeeScript";
+      
     
-      "Smalltalk" -> "Objective-C"
+      
+        "Python" -> "CoffeeScript";
+      
     
-  
+      
+        "Haskell" -> "CoffeeScript";
+      
     
-      "C" -> "Objective-C"
+      
+        "Haskell" -> "Idris";
+      
     
-  
+      
+        "Agda" -> "Idris";
+      
     
-      "C with Classes" -> "C++"
+      
+        "Coq" -> "Idris";
+      
     
-  
+      
+        "Modula" -> "Parasail";
+      
     
-      "BASIC" -> "True BASIC"
+      
+        "Ada" -> "Parasail";
+      
     
-  
+      
+        "Pascal" -> "Parasail";
+      
     
-      "EPL" -> "occam"
+      
+        "ML" -> "Parasail";
+      
     
-  
+      
+        "Java" -> "Whiley";
+      
     
-      "COBOL" -> "ABAP"
+      
+        "C" -> "Whiley";
+      
     
-  
+      
+        "Python" -> "Whiley";
+      
+    
+      
+        "Java" -> "Dafny";
+      
     
-      "sh" -> "KornShell (ksh)"
+      
+        "Spec#" -> "Dafny";
+      
     
   
     
-      "Pascal" -> "Clascal"
+      
+        "Alef" -> "Rust";
+      
     
-  
+      
+        "C++" -> "Rust";
+      
     
-      "dBase" -> "CLIPPER"
+      
+        "Camlp4" -> "Rust";
+      
     
-  
+      
+        "Erlang" -> "Rust";
+      
     
-      "LISP" -> "Common Lisp"
+      
+        "Hermes" -> "Rust";
+      
     
-  
+      
+        "Limbo" -> "Rust";
+      
     
-      "Coq"
+      
+        "Napier" -> "Rust";
+      
     
-  
+      
+        "Napier88" -> "Rust";
+      
     
-      "Forth" -> "RPL"
+      
+        "Newsqueak" -> "Rust";
+      
     
-  
+      
+        "NIL" -> "Rust";
+      
     
-      "Lisp" -> "RPL"
+      
+        "Sather" -> "Rust";
+      
     
-  
+      
+        "Standard ML" -> "Rust";
+      
     
-      "ML" -> "Standard ML"
+      
+        "C99" -> "C11";
+      
     
-  
+      
+        "Java" -> "Ceylon";
+      
     
-      "Redcode"
+      
+        "Java" -> "Dart";
+      
     
-  
+      
+        "JavaScript" -> "Dart";
+      
     
-      "BASIC" -> "OPL"
+      
+        "CoffeeScript" -> "Dart";
+      
     
-  
+      
+        "Go" -> "Dart";
+      
     
-      "dBase" -> "PARADOX"
+      
+        "C++" -> "C++11";
+      
     
-  
+      
+        "Standard C" -> "C++11";
+      
     
-      "BASIC" -> "QuickBASIC"
+      
+        "C" -> "C++11";
+      
     
-  
+      
+        "Java" -> "Kotlin";
+      
     
-      "Clarion"
+      
+        "Scala" -> "Kotlin";
+      
     
-  
+      
+        "Groovy" -> "Kotlin";
+      
     
-      "INFORM" -> "CorVision"
+      
+        "C#" -> "Kotlin";
+      
     
-  
+      
+        "Gosu" -> "Kotlin";
+      
     
-      "Simula 67" -> "Eiffel"
+      
+        "Rebol" -> "Red";
+      
     
-  
+      
+        "Scala" -> "Red";
+      
     
-      "Ada" -> "Eiffel"
+      
+        "Lua" -> "Red";
+      
     
-  
+      
+        "OCaml" -> "Opa";
+      
     
-      "BASIC" -> "GFA BASIC"
+      
+        "Erlang" -> "Opa";
+      
     
-  
+      
+        "JavaScript" -> "Opa";
+      
     
-      "Informix-4GL"
+      
+        "Erlang" -> "Elixir";
+      
     
-  
+      
+        "Ruby" -> "Elixir";
+      
     
-      "LabVIEW"
+      
+        "Clojure" -> "Elixir";
+      
     
-  
-    
-      "Miranda"
-    
-  
-    
-      "Pascal" -> "Object Pascal"
-    
-  
-    
-      "C" -> "PROMAL"
-    
-  
-    
-      "Prolog" -> "Erlang"
-    
-  
-    
-      "Ada 83" -> "Ada ISO 8652:1987"
-    
-  
-    
-      "Smalltalk" -> "Self"
-    
-  
-    
-      "occam" -> "occam 2"
-    
-  
-    
-      "HyperTalk"
-    
-  
-    
-      "C" -> "Perl"
-    
-  
-    
-      "sed" -> "Perl"
-    
-  
-    
-      "awk" -> "Perl"
-    
-  
-    
-      "sh" -> "Perl"
-    
-  
-    
-      "Modula-2" -> "Oberon"
-    
-  
-    
-      "Mathematica (Wolfram Language)"
-    
-  
-    
-      "BASIC/Z" -> "Turbo Basic"
-    
-  
-    
-      "Clean"
-    
-  
-    
-      "MATLAB" -> "Octave"
-    
-  
-    
-      "Awk" -> "Tcl"
-    
-  
-    
-      "Lisp" -> "Tcl"
-    
-  
-    
-      "BASIC" -> "STOS BASIC"
-    
-  
-    
-      "Forth" -> "Actor"
-    
-  
-    
-      "Smalltalk" -> "Actor"
-    
-  
-    
-      "REXX" -> "Object REXX"
-    
-  
-    
-      "Smalltalk" -> "Object REXX"
-    
-  
-    
-      "Ada" -> "SPARK"
-    
-  
-    
-      "APL" -> "A+"
-    
-  
-    
-      "A" -> "A+"
-    
-  
-    
-      "C shell" -> "Hamilton C shell"
-    
-  
-    
-      "C90"
-    
-  
-    
-      "Turbo Pascal" -> "Turbo Pascal OOP"
-    
-  
-    
-      "Object Pascal" -> "Turbo Pascal OOP"
-    
-  
-    
-      "Modula-2" -> "Modula-3"
-    
-  
-    
-      "Turbo Basic" -> "PowerBASIC"
-    
-  
-    
-      "VisSim"
-    
-  
-    
-      "LPC"
-    
-  
-    
-      "Bourne shell" -> "Bash"
-    
-  
-    
-      "C shell" -> "Bash"
-    
-  
-    
-      "KornShell" -> "Bash"
-    
-  
-    
-      "Smalltalk" -> "Magik"
-    
-  
-    
-      "Eiffel" -> "Sather"
-    
-  
-    
-      "STOS BASIC" -> "AMOS BASIC"
-    
-  
-    
-      "AMPL"
-    
-  
-    
-      "Oberon" -> "Object Oberon"
-    
-  
-    
-      "APL" -> "J"
-    
-  
-    
-      "FP" -> "J"
-    
-  
-    
-      "Miranda" -> "Haskell"
-    
-  
-    
-      "Common Lisp" -> "EuLisp"
-    
-  
-    
-      "Scheme" -> "EuLisp"
-    
-  
-    
-      "ksh" -> "Z Shell (zsh)"
-    
-  
-    
-      "Franz Lisp" -> "SKILL"
-    
-  
-    
-      "C++" -> "GNU E"
-    
-  
-    
-      "HTML"
-    
-  
-    
-      "Object Oberon" -> "Oberon-2"
-    
-  
-    
-      "Prolog" -> "Oz"
-    
-  
-    
-      "Q"
-    
-  
-    
-      "ABC" -> "Python"
-    
-  
-    
-      "C" -> "Python"
-    
-  
-    
-      "QuickBASIC" -> "Visual Basic"
-    
-  
-    
-      "Turbo Pascal OOP" -> "Borland Pascal"
-    
-  
-    
-      "Common Lisp" -> "Dylan"
-    
-  
-    
-      "Scheme" -> "Dylan"
-    
-  
-    
-      "PostScript" -> "S-Lang"
-    
-  
-    
-      "Smalltalk" -> "Self"
-    
-  
-    
-      "DEX" -> "Amiga E"
-    
-  
-    
-      "C" -> "Amiga E"
-    
-  
-    
-      "Modula-2" -> "Amiga E"
-    
-  
-    
-      "P'′" -> "Brainfuck"
-    
-  
-    
-      "HyperTalk" -> "LiveCode Transcript"
-    
-  
-    
-      "HyperTalk" -> "AppleScript"
-    
-  
-    
-      "APL" -> "K"
-    
-  
-    
-      "Lisp" -> "K"
-    
-  
-    
-      "Scheme" -> "Lua"
-    
-  
-    
-      "SNOBOL" -> "Lua"
-    
-  
-    
-      "Modula" -> "Lua"
-    
-  
-    
-      "CLU" -> "Lua"
-    
-  
-    
-      "C++" -> "Lua"
-    
-  
-    
-      "S" -> "R"
-    
-  
-    
-      "C" -> "ZPL"
-    
-  
-    
-      "Self" -> "NewtonScript"
-    
-  
-    
-      "Dylan" -> "NewtonScript"
-    
-  
-    
-      "SNOBOL" -> "Euphoria"
-    
-  
-    
-      "AWK" -> "Euphoria"
-    
-  
-    
-      "ABC" -> "Euphoria"
-    
-  
-    
-      "Icon" -> "Euphoria"
-    
-  
-    
-      "Python" -> "Euphoria"
-    
-  
-    
-      "Smalltalk" -> "Claire"
-    
-  
-    
-      "SETL" -> "Claire"
-    
-  
-    
-      "OPS5" -> "Claire"
-    
-  
-    
-      "Lisp" -> "Claire"
-    
-  
-    
-      "ML" -> "Claire"
-    
-  
-    
-      "C" -> "Claire"
-    
-  
-    
-      "LORE" -> "Claire"
-    
-  
-    
-      "LAURE" -> "Claire"
-    
-  
-    
-      "Common Lisp" -> "ANSI Common Lisp"
-    
-  
-    
-      "ARLA" -> "RAPID"
-    
-  
-    
-      "LPC" -> "Pike"
-    
-  
-    
-      "C" -> "Pike"
-    
-  
-    
-      "µLPC" -> "Pike"
-    
-  
-    
-      "Forth" -> "ANS Forth"
-    
-  
-    
-      "Ada 83" -> "Ada 95"
-    
-  
-    
-      "Borland Pascal" -> "Borland Delphi"
-    
-  
-    
-      "ColdFusion (CFML)"
-    
-  
-    
-      "C" -> "Java"
-    
-  
-    
-      "Simula 67" -> "Java"
-    
-  
-    
-      "C++" -> "Java"
-    
-  
-    
-      "Smalltalk" -> "Java"
-    
-  
-    
-      "Ada 83" -> "Java"
-    
-  
-    
-      "Objective-C" -> "Java"
-    
-  
-    
-      "Mesa" -> "Java"
-    
-  
-    
-      "Self" -> "LiveScript"
-    
-  
-    
-      "C" -> "LiveScript"
-    
-  
-    
-      "Scheme" -> "LiveScript"
-    
-  
-    
-      "Prolog" -> "Mercury"
-    
-  
-    
-      "Hope" -> "Mercury"
-    
-  
-    
-      "Haskell" -> "Mercury"
-    
-  
-    
-      "Perl" -> "PHP"
-    
-  
-    
-      "Smalltalk" -> "Ruby"
-    
-  
-    
-      "Perl" -> "Ruby"
-    
-  
-    
-      "LiveScript" -> "JavaScript"
-    
-  
-    
-      "Scheme" -> "Racket"
-    
-  
-    
-      "Lisp" -> "Racket"
-    
-  
-    
-      "SGML" -> "CSS"
-    
-  
-    
-      "Lisp" -> "Curl"
-    
-  
-    
-      "C++" -> "Curl"
-    
-  
-    
-      "Tcl/Tk" -> "Curl"
-    
-  
-    
-      "TeX" -> "Curl"
-    
-  
-    
-      "HTML" -> "Curl"
-    
-  
-    
-      "Lasso"
-    
-  
-    
-      "APL" -> "Perl Data Language (PDL)"
-    
-  
-    
-      "Perl" -> "Perl Data Language (PDL)"
-    
-  
-    
-      "Visual Basic" -> "VBScript"
-    
-  
-    
-      "Caml Light" -> "OCaml"
-    
-  
-    
-      "Standard ML" -> "OCaml"
-    
-  
-    
-      "REXX" -> "NetRexx"
-    
-  
-    
-      "Oberon-2" -> "Component Pascal"
-    
-  
-    
-      "Joule" -> "E"
-    
-  
-    
-      "Original-E" -> "E"
-    
-  
-    
-      "Scheme" -> "Pico"
-    
-  
-    
-      "Smalltalk-80" -> "Squeak"
-    
-  
-    
-      "Self" -> "Squeak"
-    
-  
-    
-      "JavaScript" -> "ECMAScript"
-    
-  
-    
-      "Smalltalk" -> "F-Script"
-    
-  
-    
-      "APL" -> "F-Script"
-    
-  
-    
-      "Objective-C" -> "F-Script"
-    
-  
-    
-      "Common Lisp" -> "ISLISP"
-    
-  
-    
-      "Java" -> "Tea"
-    
-  
-    
-      "Scheme" -> "Tea"
-    
-  
-    
-      "Tcl" -> "Tea"
-    
-  
-    
-      "Self" -> "REBOL"
-    
-  
-    
-      "Forth" -> "REBOL"
-    
-  
-    
-      "Lisp" -> "REBOL"
-    
-  
-    
-      "Logo" -> "REBOL"
-    
-  
-    
-      "Prolog" -> "Logtalk"
-    
-  
-    
-      "ECMAScript" -> "ActionScript"
-    
-  
-    
-      "C++" -> "Standard C++"
-    
-  
-    
-      "Standard C" -> "Standard C++"
-    
-  
-    
-      "C" -> "Standard C++"
-    
-  
-    
-      "M2001"
-    
-  
-    
-      "PureBasic"
-    
-  
-    
-      "C++" -> "UnrealScript"
-    
-  
-    
-      "Java" -> "UnrealScript"
-    
-  
-    
-      "DSSSL" -> "XSLT (+ XPath)"
-    
-  
-    
-      "Visual Basic" -> "Xojo (REALbasic at the time)"
-    
-  
-    
-      "C90" -> "C99"
-    
-  
-    
-      "Visual Basic" -> "Gambas"
-    
-  
-    
-      "Java" -> "Gambas"
-    
-  
-    
-      "Game Maker" -> "Game Maker Language (GML)"
-    
-  
-    
-      "dBase" -> "Harbour"
-    
-  
-    
-      "Clipper" -> "Harbour"
-    
-  
-    
-      "Java" -> "Join Java"
-    
-  
-    
-      "DarkBasic"
-    
-  
-    
-      "C" -> "C#"
-    
-  
-    
-      "C++" -> "C#"
-    
-  
-    
-      "Java" -> "C#"
-    
-  
-    
-      "Delphi" -> "C#"
-    
-  
-    
-      "Modula-2" -> "C#"
-    
-  
-    
-      "FP" -> "Joy"
-    
-  
-    
-      "Forth" -> "Joy"
-    
-  
-    
-      "Java" -> "AspectJ"
-    
-  
-    
-      "Common Lisp" -> "AspectJ"
-    
-  
-    
-      "C" -> "D"
-    
-  
-    
-      "C++" -> "D"
-    
-  
-    
-      "C#" -> "D"
-    
-  
-    
-      "Java" -> "D"
-    
-  
-    
-      "Java" -> "Processing"
-    
-  
-    
-      "C" -> "Processing"
-    
-  
-    
-      "C++[7]" -> "Processing"
-    
-  
-    
-      "Visual Basic" -> "Visual Basic .NET"
-    
-  
-    
-      "Godot" -> "GDScript (GDS)"
-    
-  
-    
-      "Shakespeare Programming Language"
-    
-  
-    
-      "Self" -> "Io"
-    
-  
-    
-      "NewtonScript" -> "Io"
-    
-  
-    
-      "Lua" -> "Io"
-    
-  
-    
-      "GScript" -> "Gosu"
-    
-  
-    
-      "Logo" -> "Scratch"
-    
-  
-    
-      "Smalltalk" -> "Scratch"
-    
-  
-    
-      "Squeak" -> "Scratch"
-    
-  
-    
-      "E-Toys" -> "Scratch"
-    
-  
-    
-      "HyperCard" -> "Scratch"
-    
-  
-    
-      "AgentSheets" -> "Scratch"
-    
-  
-    
-      "StarLogo" -> "Scratch"
-    
-  
-    
-      "Tweak" -> "Scratch"
-    
-  
-    
-      "C#" -> "Nemerle"
-    
-  
-    
-      "ML" -> "Nemerle"
-    
-  
-    
-      "MetaHaskell" -> "Nemerle"
-    
-  
-    
-      "Joy" -> "Factor"
-    
-  
-    
-      "Forth" -> "Factor"
-    
-  
-    
-      "Lisp" -> "Factor"
-    
-  
-    
-      "Smalltalk" -> "Scala"
-    
-  
-    
-      "Java" -> "Scala"
-    
-  
-    
-      "Haskell" -> "Scala"
-    
-  
-    
-      "Standard ML" -> "Scala"
-    
-  
-    
-      "OCaml" -> "Scala"
-    
-  
-    
-      "C++" -> "C++03"
-    
-  
-    
-      "Standard C" -> "C++03"
-    
-  
-    
-      "C" -> "C++03"
-    
-  
-    
-      "Lua" -> "Squirrel"
-    
-  
-    
-      "Python" -> "Boo"
-    
-  
-    
-      "C#" -> "Boo"
-    
-  
-    
-      "Subtext"
-    
-  
-    
-      "Alma-0"
-    
-  
-    
-      "QBasic" -> "FreeBASIC"
-    
-  
-    
-      "Java" -> "Groovy"
-    
-  
-    
-      "Lisp" -> "Little b"
-    
-  
-    
-      "C#" -> "Fantom"
-    
-  
-    
-      "Scala" -> "Fantom"
-    
-  
-    
-      "Ruby" -> "Fantom"
-    
-  
-    
-      "Erlang" -> "Fantom"
-    
-  
-    
-      "OCaml" -> "F#"
-    
-  
-    
-      "C#" -> "F#"
-    
-  
-    
-      "Haskell" -> "F#"
-    
-  
-    
-      "ActionScript" -> "Haxe"
-    
-  
-    
-      "OCaml" -> "Haxe"
-    
-  
-    
-      "Java" -> "Haxe"
-    
-  
-    
-      "Object Pascal" -> "Oxygene"
-    
-  
-    
-      "C#" -> "Oxygene"
-    
-  
-    
-      "PWCT"
-    
-  
-    
-      "Seed7"
-    
-  
-    
-      "Python" -> "Cobra"
-    
-  
-    
-      "C#" -> "Cobra"
-    
-  
-    
-      "Eiffel" -> "Cobra"
-    
-  
-    
-      "Objective-C" -> "Cobra"
-    
-  
-    
-      "C#" -> "Windows PowerShell"
-    
-  
-    
-      "ksh" -> "Windows PowerShell"
-    
-  
-    
-      "Perl" -> "Windows PowerShell"
-    
-  
-    
-      "CL" -> "Windows PowerShell"
-    
-  
-    
-      "DCL" -> "Windows PowerShell"
-    
-  
-    
-      "SQL" -> "Windows PowerShell"
-    
-  
-    
-      "Java" -> "OptimJ"
-    
-  
-    
-      "Scala" -> "Fortress"
-    
-  
-    
-      "ML" -> "Fortress"
-    
-  
-    
-      "Haskell" -> "Fortress"
-    
-  
-    
-      "C#" -> "Vala"
-    
-  
-    
-      "Ada 95" -> "Ada 2005"
-    
-  
-    
-      "Coq" -> "Agda"
-    
-  
-    
-      "Epigram" -> "Agda"
-    
-  
-    
-      "Haskell" -> "Agda"
-    
-  
-    
-      "QBasic" -> "QB64"
-    
-  
-    
-      "Lisp" -> "Clojure"
-    
-  
-    
-      "ML" -> "Clojure"
-    
-  
-    
-      "Haskell" -> "Clojure"
-    
-  
-    
-      "Erlang" -> "Clojure"
-    
-  
-    
-      "LOLCODE"
-    
-  
-    
-      "Oberon" -> "Oberon-07"
-    
-  
-    
-      "Swift (parallel scripting language)"
-    
-  
-    
-      "Python" -> "Nim"
-    
-  
-    
-      "Lisp" -> "Nim"
-    
-  
-    
-      "Object Pascal" -> "Nim"
-    
-  
-    
-      "Python" -> "Genie"
-    
-  
-    
-      "Boo" -> "Genie"
-    
-  
-    
-      "D" -> "Genie"
-    
-  
-    
-      "Object Pascal" -> "Genie"
-    
-  
-    
-      "Q" -> "Pure"
-    
-  
-    
-      "HPF" -> "Chapel"
-    
-  
-    
-      "ZPL" -> "Chapel"
-    
-  
-    
-      "C" -> "Go"
-    
-  
-    
-      "Oberon" -> "Go"
-    
-  
-    
-      "Limbo" -> "Go"
-    
-  
-    
-      "Smalltalk" -> "Go"
-    
-  
-    
-      "JavaScript" -> "CoffeeScript"
-    
-  
-    
-      "Ruby" -> "CoffeeScript"
-    
-  
-    
-      "Python" -> "CoffeeScript"
-    
-  
-    
-      "Haskell" -> "CoffeeScript"
-    
-  
-    
-      "Haskell" -> "Idris"
-    
-  
-    
-      "Agda" -> "Idris"
-    
-  
-    
-      "Coq" -> "Idris"
-    
-  
-    
-      "Modula" -> "Parasail"
-    
-  
-    
-      "Ada" -> "Parasail"
-    
-  
-    
-      "Pascal" -> "Parasail"
-    
-  
-    
-      "ML" -> "Parasail"
-    
-  
-    
-      "Java" -> "Whiley"
-    
-  
-    
-      "C" -> "Whiley"
-    
-  
-    
-      "Python" -> "Whiley"
-    
-  
-    
-      "Java" -> "Dafny"
-    
-  
-    
-      "Spec#" -> "Dafny"
-    
-  
-    
-      "Alef" -> "Rust"
-    
-  
-    
-      "C++" -> "Rust"
-    
-  
-    
-      "Camlp4" -> "Rust"
-    
-  
-    
-      "Erlang" -> "Rust"
-    
-  
-    
-      "Hermes" -> "Rust"
-    
-  
-    
-      "Limbo" -> "Rust"
-    
-  
-    
-      "Napier" -> "Rust"
+      
+        "Haskell" -> "Elm";
+      
     
-  
-    
-      "Napier88" -> "Rust"
-    
-  
-    
-      "Newsqueak" -> "Rust"
-    
-  
-    
-      "NIL" -> "Rust"
-    
-  
-    
-      "Sather" -> "Rust"
-    
-  
-    
-      "Standard ML" -> "Rust"
-    
-  
-    
-      "C99" -> "C11"
-    
-  
-    
-      "Java" -> "Ceylon"
-    
-  
-    
-      "Java" -> "Dart"
-    
-  
-    
-      "JavaScript" -> "Dart"
-    
-  
-    
-      "CoffeeScript" -> "Dart"
-    
-  
-    
-      "Go" -> "Dart"
-    
-  
-    
-      "C++" -> "C++11"
-    
-  
-    
-      "Standard C" -> "C++11"
-    
-  
-    
-      "C" -> "C++11"
-    
-  
-    
-      "Java" -> "Kotlin"
-    
-  
-    
-      "Scala" -> "Kotlin"
-    
-  
-    
-      "Groovy" -> "Kotlin"
-    
-  
-    
-      "C#" -> "Kotlin"
-    
-  
-    
-      "Gosu" -> "Kotlin"
-    
-  
-    
-      "Rebol" -> "Red"
-    
-  
-    
-      "Scala" -> "Red"
-    
-  
-    
-      "Lua" -> "Red"
-    
-  
-    
-      "OCaml" -> "Opa"
-    
-  
-    
-      "Erlang" -> "Opa"
-    
-  
-    
-      "JavaScript" -> "Opa"
-    
-  
-    
-      "Erlang" -> "Elixir"
-    
-  
-    
-      "Ruby" -> "Elixir"
-    
-  
-    
-      "Clojure" -> "Elixir"
-    
-  
-    
-      "Haskell" -> "Elm"
-    
-  
-    
-      "Standard ML" -> "Elm"
-    
-  
-    
-      "OCaml" -> "Elm"
-    
-  
-    
-      "F#" -> "Elm"
-    
-  
-    
-      "JavaScript" -> "TypeScript"
-    
-  
-    
-      "CoffeeScript" -> "TypeScript"
-    
-  
-    
-      "MATLAB" -> "Julia"
-    
-  
-    
-      "Lisp" -> "Julia"
-    
-  
-    
-      "C" -> "Julia"
-    
-  
-    
-      "Fortran" -> "Julia"
-    
-  
-    
-      "Mathematica[8] (strictly its Wolfram Language)" -> "Julia"
-    
-  
-    
-      "Python" -> "Julia"
-    
-  
-    
-      "Perl" -> "Julia"
-    
-  
-    
-      "R" -> "Julia"
-    
-  
-    
-      "Ruby" -> "Julia"
+      
+        "Standard ML" -> "Elm";
+      
     
-  
-    
-      "Lua[9]" -> "Julia"
-    
-  
-    
-      "P"
-    
-  
-    
-      "Ada 2005" -> "Ada 2012"
-    
-  
-    
-      "ISO/IEC 8652:1995/Amd 1:2007" -> "Ada 2012"
-    
-  
-    
-      "P4"
-    
-  
-    
-      "Haskell" -> "PureScript"
-    
-  
-    
-      "Scratch" -> "Hopscotch"
-    
-  
-    
-      "Swift (parallel scripting language)" -> "Cuneiform"
-    
-  
-    
-      "ML (programming language)" -> "Lean"
-    
-  
-    
-      "Coq" -> "Lean"
-    
-  
-    
-      "Haskell" -> "Lean"
-    
-  
-    
-      "Agda (programming language)" -> "Lean"
-    
-  
-    
-      "Ruby" -> "Crystal"
-    
-  
-    
-      "C" -> "Crystal"
-    
-  
-    
-      "Rust" -> "Crystal"
-    
-  
-    
-      "Go" -> "Crystal"
-    
-  
-    
-      "C#" -> "Crystal"
-    
-  
-    
-      "Python" -> "Crystal"
-    
-  
-    
-      "PHP" -> "Hack"
-    
-  
-    
-      "Objective-C" -> "Swift"
-    
-  
-    
-      "Rust" -> "Swift"
-    
-  
+      
+        "OCaml" -> "Elm";
+      
     
-      "Haskell" -> "Swift"
+      
+        "F#" -> "Elm";
+      
     
-  
-    
-      "Ruby" -> "Swift"
-    
-  
-    
-      "Python" -> "Swift"
-    
-  
-    
-      "C#" -> "Swift"
-    
-  
-    
-      "CLU" -> "Swift"
-    
-  
-    
-      "C++" -> "C++14"
-    
-  
+      
+        "JavaScript" -> "TypeScript";
+      
     
-      "Standard C" -> "C++14"
+      
+        "CoffeeScript" -> "TypeScript";
+      
     
-  
-    
-      "C" -> "C++14"
-    
-  
-    
-      "Perl" -> "Raku"
-    
-  
-    
-      "Haskell" -> "Raku"
+      
+        "MATLAB" -> "Julia";
+      
     
-  
-    
-      "Python" -> "Raku"
+      
+        "Lisp" -> "Julia";
+      
     
-  
+      
+        "C" -> "Julia";
+      
     
-      "Ruby" -> "Raku"
+      
+        "Fortran" -> "Julia";
+      
     
-  
+      
+        "Mathematica (Wolfram Language)" -> "Julia";
+      
     
-      "C" -> "Zig"
+      
+        "Python" -> "Julia";
+      
     
-  
+      
+        "Perl" -> "Julia";
+      
     
-      "C++" -> "Zig"
+      
+        "R" -> "Julia";
+      
     
-  
+      
+        "Ruby" -> "Julia";
+      
     
-      "LLVM IR" -> "Zig"
+      
+        "Lua" -> "Julia";
+      
     
-  
+      
+        "Ada 2005" -> "Ada 2012";
+      
     
-      "Go" -> "Zig"
+      
+        "ISO/IEC 8652:1995/Amd 1:2007" -> "Ada 2012";
+      
     
-  
+      
+        "Haskell" -> "PureScript";
+      
     
-      "Rust" -> "Zig"
+      
+        "Scratch" -> "Hopscotch";
+      
     
-  
+      
+        "Swift (parallel scripting language)" -> "Cuneiform";
+      
     
-      "JavaScript" -> "Reason"
+      
+        "ML (programming language)" -> "Lean";
+      
     
-  
+      
+        "Coq" -> "Lean";
+      
     
-      "OCaml[10]" -> "Reason"
+      
+        "Haskell" -> "Lean";
+      
     
-  
+      
+        "Agda (programming language)" -> "Lean";
+      
     
-      "Lua" -> "Ring"
+      
+        "Ruby" -> "Crystal";
+      
     
-  
+      
+        "C" -> "Crystal";
+      
     
-      "Python" -> "Ring"
+      
+        "Rust" -> "Crystal";
+      
     
-  
+      
+        "Go" -> "Crystal";
+      
     
-      "Ruby" -> "Ring"
+      
+        "C#" -> "Crystal";
+      
     
-  
+      
+        "Python" -> "Crystal";
+      
     
-      "C" -> "Ring"
+      
+        "PHP" -> "Hack";
+      
     
-  
+      
+        "Objective-C" -> "Swift";
+      
     
-      "C#" -> "Ring"
+      
+        "Rust" -> "Swift";
+      
     
-  
+      
+        "Haskell" -> "Swift";
+      
     
-      "BASIC" -> "Ring"
+      
+        "Ruby" -> "Swift";
+      
     
-  
+      
+        "Python" -> "Swift";
+      
     
-      "QML" -> "Ring"
+      
+        "C#" -> "Swift";
+      
     
-  
+      
+        "CLU" -> "Swift";
+      
     
-      "xBase" -> "Ring"
+      
+        "C++" -> "C++14";
+      
     
-  
+      
+        "Standard C" -> "C++14";
+      
     
-      "Supernova[11]" -> "Ring"
+      
+        "C" -> "C++14";
+      
     
-  
+      
+        "Perl" -> "Raku";
+      
     
-      "C++" -> "C++17"
+      
+        "Haskell" -> "Raku";
+      
     
-  
+      
+        "Python" -> "Raku";
+      
     
-      "Standard C" -> "C++17"
+      
+        "Ruby" -> "Raku";
+      
     
-  
+      
+        "C" -> "Zig";
+      
     
-      "C" -> "C++17"
+      
+        "C++" -> "Zig";
+      
     
-  
+      
+        "LLVM IR" -> "Zig";
+      
     
-      "Java" -> "Ballerina"
+      
+        "Go" -> "Zig";
+      
     
-  
+      
+        "Rust" -> "Zig";
+      
     
-      "Javascript" -> "Ballerina"
+      
+        "JavaScript" -> "Reason";
+      
     
-  
+      
+        "OCaml" -> "Reason";
+      
     
-      "Go" -> "Ballerina"
+      
+        "Lua" -> "Ring";
+      
     
-  
+      
+        "Python" -> "Ring";
+      
     
-      "Rust" -> "Ballerina"
+      
+        "Ruby" -> "Ring";
+      
     
-  
+      
+        "C" -> "Ring";
+      
     
-      "C#" -> "Ballerina"
+      
+        "C#" -> "Ring";
+      
     
-  
+      
+        "BASIC" -> "Ring";
+      
     
-      "C#" -> "Q#"
+      
+        "QML" -> "Ring";
+      
     
-  
+      
+        "xBase" -> "Ring";
+      
     
-      "F#" -> "Q#"
+      
+        "Supernova" -> "Ring";
+      
     
-  
+      
+        "C++" -> "C++17";
+      
     
-      "Python" -> "Q#"
+      
+        "Standard C" -> "C++17";
+      
     
-  
+      
+        "C" -> "C++17";
+      
     
-      "C11" -> "C17"
+      
+        "Java" -> "Ballerina";
+      
     
-  
+      
+        "JavaScript" -> "Ballerina";
+      
     
-      "Fortran 2008" -> "Fortran 2018"
+      
+        "Go" -> "Ballerina";
+      
     
-  
+      
+        "Rust" -> "Ballerina";
+      
     
-      "JavaScript" -> "Bosque"
+      
+        "C#" -> "Ballerina";
+      
     
-  
+      
+        "C#" -> "Q#";
+      
     
-      "TypeScript" -> "Bosque"
+      
+        "F#" -> "Q#";
+      
     
-  
+      
+        "Python" -> "Q#";
+      
     
-      "ML" -> "Bosque"
+      
+        "C11" -> "C17";
+      
     
-  
+      
+        "Fortran 2008" -> "Fortran 2018";
+      
     
-      "C++" -> "C++20"
+      
+        "JavaScript" -> "Bosque";
+      
     
-  
+      
+        "TypeScript" -> "Bosque";
+      
     
-      "Standard C" -> "C++20"
+      
+        "ML" -> "Bosque";
+      
     
   
-    
-      "C" -> "C++20"
     
-  
+      
+        "C++" -> "C++20";
+      
     
-      "Excel formulas" -> "Microsoft Power Fx"
+      
+        "Standard C" -> "C++20";
+      
     
-  
+      
+        "C" -> "C++20";
+      
     
-      "C++" -> "Carbon"
+      
+        "Excel formulas" -> "Microsoft Power Fx";
+      
     
-  
+      
+        "C++" -> "Carbon";
+      
     
-      "Rust" -> "Carbon"
+      
+        "Rust" -> "Carbon";
+      
     
   
+
 }
