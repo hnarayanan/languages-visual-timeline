@@ -3,7 +3,7 @@ digraph languages {
   fontname="Helvetica,Arial,sans-serif";
   node[fontname="Helvetica,Arial,sans-serif"];
   edge[fontname="Helvetica,Arial,sans-serif"];
-  node[color=lightblue2, style=filled];
+  node[color="lightblue2",shape="box",style="filled,rounded"];
   newrank=true;
   rankdir=LR;
   ranksep=10;
@@ -14,13 +14,13 @@ digraph languages {
       label="{{ decade.label }}";
       rank=same;
       {% for language in decade.languages %}
-        "{{ language.name }}";
+        "{{ language }}";
       {% endfor %}
     }
   {% endfor %}
 
   {% for decade in decades %}
-    {% for language in decade.languages %}
+    {% for language in decade.languages_predecessors %}
       {% if language.predecessor %}
         "{{ language.predecessor }}" -> "{{ language.name }}";
       {% endif %}

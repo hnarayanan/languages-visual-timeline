@@ -6,11 +6,36 @@ from jinja2 import Environment, FileSystemLoader
 
 
 def clean_string(string):
-    IGNORED_SUFFIXES = [" (concept)", " (implementation)"]
+    IGNORED_SUFFIXES = [
+        " (concept)",
+        " (implementation)",
+        " (year of concept publication)",
+        " (year of conceptualization)",
+        " (Notation)",
+        " (Concept)",
+        "[3][4]",
+        "[5]",
+        "[6]",
+        "[7]",
+        "[8]",
+        "[9]",
+        "[10]",
+    ]
+    REPLACED_PATTERNS = [
+        ("LISP", "Lisp"),
+        ("LOGO", "Logo"),
+        ("Algol 60", "ALGOL 60"),
+        ("ALGOL-60", "ALGOL 60"),
+        ("Algol60", "ALGOL 60"),
+        ("CLIPPER", "Clipper"),
+        (" (strictly its Wolfram Language)", " (Wolfram Language)"),
+    ]
 
     string = string.strip()
     for suffix in IGNORED_SUFFIXES:
         string = string.replace(suffix, "")
+    for pattern in REPLACED_PATTERNS:
+        string = string.replace(pattern[0], pattern[1])
     return string
 
 
@@ -29,32 +54,24 @@ def load_languages_data():
         decade = dict()
         decade["idx"] = table_idx
         decade["label"] = f"Decade {table_idx}"
-        decade["languages"] = list()
+        decade["languages"] = set()
+        decade["languages_predecessors"] = list()
+
         for _, language in table.iterrows():
+            if language["Name"] not in FAKE_NAMES:
+                decade["languages"].add(clean_string(language["Name"]))
+
             if language["Predecessor(s)"]:
                 predecessors = str(language["Predecessor(s)"]).split(",")
                 for predecessor in predecessors:
                     if predecessor not in FAKE_PREDECESSORS:
-                        decade["languages"].append(
+                        decade["languages_predecessors"].append(
                             {
                                 "predecessor": clean_string(predecessor),
                                 "name": clean_string(language["Name"]),
                             }
                         )
-                    else:
-                        if language["Name"] not in FAKE_NAMES:
-                            decade["languages"].append(
-                                {
-                                    "name": clean_string(language["Name"]),
-                                }
-                            )
-            else:
-                if language["Name"] not in FAKE_NAMES:
-                    decade["languages"].append(
-                        {
-                            "name": clean_string(language["Name"]),
-                        }
-                    )
+        decade["languages"] = sorted(decade["languages"])
         decades.append(decade)
     return decades
 
