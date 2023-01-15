@@ -1,10 +1,6 @@
-"""
-Running this script generates a file called languages.dot, which can
-be converted to a pretty graphic file using Graphviz:
+#!/usr/bin/env python
 
-$ dot -Tsvg languages.dot -o languages.svg
-"""
-
+import argparse
 import pandas as pd
 from jinja2 import Environment, FileSystemLoader
 
@@ -63,18 +59,33 @@ def load_languages_data():
     return decades
 
 
-def load_languages_template():
-    loader = FileSystemLoader(searchpath="./templates/")
+def get_template_name():
+    DEFAULT_TEMPLATE_NAME = "languages.dot"
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--template",
+        help="Name of the template file",
+        default=DEFAULT_TEMPLATE_NAME,
+        type=str,
+    )
+    args = parser.parse_args()
+    return args.template
+
+
+def load_template(file_name="languages.dot", searchpath="./templates/"):
+    loader = FileSystemLoader(searchpath=searchpath)
     env = Environment(loader=loader)
-    template = env.get_template("languages.dot")
+    template = env.get_template(file_name)
     return template
 
 
 if __name__ == "__main__":
 
-    template = load_languages_template()
+    template_name = get_template_name()
+    template = load_template(template_name)
     decades = load_languages_data()
     rendered_template = template.render(decades=decades)
 
-    with open("languages.dot", "w", encoding="utf-8") as f:
+    with open(template_name, "w", encoding="utf-8") as f:
         f.write(rendered_template)
